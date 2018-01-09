@@ -1,0 +1,31 @@
+.card-why{
+  background: white;
+  padding: 30px;
+  box-shadow: 1px 1px 2px #e7e7e7;
+  border-radius: 4px;
+  margin: 30px 10px;
+  height: 250px;
+  position: relative;
+
+  h3{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 14px;
+    font-weight: lighter;
+
+  }
+}
+
+.card-why-logo{
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  color: #c19064;
+  // height: 60px;
+}
+
