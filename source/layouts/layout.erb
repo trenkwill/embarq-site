@@ -12,8 +12,12 @@
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
+    <% if content_for?(:navbar_class) %>
+      <%= yield_content :navbar_class %>
+    <% else %>
+      <%= partial "layouts/navbar" %>
+    <% end %>
 
-    <%= partial "layouts/navbar" %>
     <%= yield %>
     <%= partial "layouts/footer" %>
 

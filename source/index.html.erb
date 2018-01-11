@@ -1,3 +1,4 @@
+
 <div class="banner">
   <div class="container">
     <div class="banner-content">
@@ -20,7 +21,8 @@
   <br><br>
   Le client final lui ne reçoit qu'une seule facture.</p>
   <hr>
-  <a href="#" class="btn-embarq">En savoir plus</a>
+  <%= link_to "En savoir plus", "portage.html", class: "btn-embarq" %>
+<!--   <a href="#" class="btn-embarq">En savoir plus</a> -->
       </div>
 
       <div class="col-xs-12 col-md-6">
@@ -42,21 +44,58 @@
       <p>Avec Embarq l’accompagnement c’est pas du pipeau.Nous vous guidons dans le lancement de votre activité et dans le développement de votre business. Vous profitez de nos outils de prospection et de visibilité online.</p>
       </div>
     </div>
-  <div class="col-xs-12 col-md-4">
-    <div class="card-why">
-      <%= image_tag "humain.png", class: "card-why-logo"%>
-      <h3>Humain</h3>
-      <p>Notre identité c’est le service client et le sens du contact. Venez en juger par vous-mêmes et prenons le temps de discuter de vos projets autour d’un café.</p>
+    <div class="col-xs-12 col-md-4">
+      <div class="card-why">
+        <%= image_tag "humain.png", class: "card-why-logo"%>
+        <h3>Humain</h3>
+        <p>Notre identité c’est le service client et le sens du contact. Venez en juger par vous-mêmes et prenons le temps de discuter de vos projets autour d’un café.</p>
+      </div>
     </div>
-  </div>
-  <div class="col-xs-12 col-md-4">
-    <div class="card-why">
-      <%= image_tag "conseil.png", class: "card-why-logo"%>
-      <h3>Conseil</h3>
-      <p>Des professionnels expérimentés hyper réactifs vous réservent un conseil personnalisé afin de vous accompagner dans vos démarches et optimiser vos revenus.</p>
+    <div class="col-xs-12 col-md-4">
+      <div class="card-why">
+        <%= image_tag "conseil.png", class: "card-why-logo"%>
+        <h3>Conseil</h3>
+        <p>Des professionnels expérimentés hyper réactifs vous réservent un conseil personnalisé afin de vous accompagner dans vos démarches et optimiser vos revenus.</p>
+      </div>
     </div>
-  </div>
-  </div>
+    </div>
+    <div class="container">
+    <div class="sharevalues">
+      <h4>Vous partagez nos valeurs ?</h4>
+      <h3>Contactez-nous, on vous répond dans l'heure !</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+          <form action="#">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="first-name" placeholder="Votre prénom">
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="last-name" placeholder="Votre nom">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Votre adresse email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="phone" placeholder="Votre téléphone">
+            </div>
+            <input type="submit" value="Sign up" class="btn-embarq" style="width: 100%">
+          </form>
+        </div>
+      </div>
+
+
+
+      </form>
+
+    </div>
+    </div>
+
 </div>
 
 
