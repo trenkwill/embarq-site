@@ -1,13 +1,18 @@
 .btn-embarq {
   color: white;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 4px;
-  font-weight: bold;
-  background: #4eb1ce;
+  font-size: 15px;
+  background: rgba(0,186,242,1);
   transition: background 0.3s ease;
   opacity: 0.8;
+  text-shadow: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 230px;
+  height: 49px;
     &:hover {
-      opacity: 1;
+      background: rgba(0,169,230,1);
       text-decoration: none;
       color: white;
     }
