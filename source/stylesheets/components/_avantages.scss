@@ -1,0 +1,16 @@
+.avantages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: image-url("avantages.jpg");
+  text-align: center;
+  background-size: cover !important;
+  height: 400px;
+
+  mark{
+    background: white;
+    color: #333333;
+    font-size: 23px;
+    padding: 20px 100px;
+  }
+}
