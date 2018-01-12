@@ -10,7 +10,6 @@
 
         <%= link_to "Portage Salarial", "portage.html", class: "navbar-wagon-item navbar-wagon-link" %>
         <%= link_to "Consultant", "consultant.html", class: "navbar-wagon-item navbar-wagon-link" %>
-
         <%= link_to "Entreprise", "entreprise.html", class: "navbar-wagon-item navbar-wagon-link" %>
         <%= link_to "Blog", "blog.html", class: "navbar-wagon-item navbar-wagon-link" %>
         <%= link_to "Accès consultant", "https://embarq.laya.fr", class: "btn-embarq", target: '_blank' %>
@@ -22,9 +21,11 @@
         <div class="dropdown">
           <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><a href="#">Portage Salarial</a></li>
-            <li><a href="#">Entreprise</a></li>
-            <li><a href="https://embarq.laya.fr", target="blank">Accès Consultant</a></li>
+            <li><%= link_to "Portage Salarial", "portage.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+            <li><%= link_to "Consultant", "consultant.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+            <li><%= link_to "Entreprise", "entreprise.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+            <li><%= link_to "Blog", "blog.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+            <li><%= link_to "Accès consultant", "https://embarq.laya.fr", target: '_blank' %></li>
           </ul>
         </div>
       </div>
