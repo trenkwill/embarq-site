@@ -1,0 +1,68 @@
+#portage{
+
+  h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    line-height: 56px;
+    // letter-spacing: 0px;
+  }
+
+  h3{
+    font-size: 36px;
+    color: #000;
+  }
+  h4{
+    font-size: 21px;
+    color: #000;
+    line-height: 31px;
+  }
+
+  h5{
+    font-size: 21px;
+    color: #000;
+    line-height: 31px;
+    font-weight: 300;
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+}
+
+.sablier{
+  background-image: image-url("sablier.jpg");
+  color: white;
+}
+
+
+.fa-calendar {
+  color: #c2413b;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.fa-magic{
+  color: #5a99db;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.fa-coffee{
+  color: #7831f5;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.fa-star{
+  color: #d9823b;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.fa-plug{
+  color: #64c87a;
+  font-size: 30px;
+  margin: 10px;
+}
