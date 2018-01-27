@@ -30,5 +30,35 @@
   p{
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+  }
+
+  .coordonne{
+    display: flex;
+    position: relative
+  }
+  .coordonne-contact{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+  }
+  .fa-map-marker{
+    color: #48a8e1;
+    margin-right: 10px;
+  }
+  .fa-mobile{
+    color: #48a8e1;
+    margin-right: 10px;
+  }
+  .fa-envelope-o{
+    color: #48a8e1;
+    margin-right: 10px;
+  }
+  .social-links{
+    color: #48a8e1;
+    margin-top: 25px;
+    padding: 0px 30px;
+    font-size: 24px;
   }
 }

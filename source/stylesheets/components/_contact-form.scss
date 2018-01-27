@@ -4,7 +4,7 @@
   padding: 20px;
   border-radius: 5px;
   .btn-embarq{
-    width: 100%;
+    width: 50%;
   }
 
   .category-choices{
@@ -20,5 +20,14 @@
     padding: 20px;
     border-radius: 5px;
     opacity: 0.4;
+    &:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+    &.active {
+      background: rgba(0,186,242,1);
+      color: white;
+      opacity: 1;
+    }
   }
 }
