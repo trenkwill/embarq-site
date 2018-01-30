@@ -5,63 +5,64 @@
       <h5 class="text-center">Vous souhaitez plus d'informations sur nos services ou venir boire un café ? <br>On vous répond dans l'heure !</h5>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-
           <div class="contact-form">
-            <form action="#">
+            <form id="embarq-form">
               <div class="row">
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="prenom"><p>Prénom</p></label>
-                    <input type="text" class="form-control" id="prenom" placeholder="Bob">
+                    <input type="text" class="form-control" id="prenom" placeholder="Bob" name="prenom" required>
                   </div>
                 </div>
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="nom"><p>Nom</p></label>
-                    <input type="text" class="form-control" id="nom" placeholder="Sponge">
+                    <input type="text" class="form-control" id="nom" placeholder="Sponge" name="nom" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="email"><p>Email</p></label>
-                <input type="email" class="form-control" id="email" placeholder="bob@gmail.com">
+                <input type="email" class="form-control" id="email" placeholder="bob@gmail.com" name="email" required>
               </div>
               <div class="row">
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="phone"><p>Téléphone</p></label>
-                    <input type="text" class="form-control" id="phone" placeholder="06 54 78 97 43">
+                    <input type="text" class="form-control" id="phone" placeholder="06 54 78 97 43" name="phone" required>
                   </div>
                 </div>
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="ville"><p>Ville</p></label>
-                    <input type="text" class="form-control" id="ville" placeholder="Paris">
+                    <input type="text" class="form-control" id="ville" placeholder="Paris" name="ville" required>
                   </div>
                 </div>
               </div>
-              <label for="interestby"><p>Vous êtes intéressé par :</p></label>
-              <div class="category-choices">
+              <div class="form-group">
+                <label for="interestby"><p>Vous êtes intéressé par :</p></label>
+                <div class="category-choices">
 
-                <div class="form-check form-check-inline">
-                  <input class="hidden" type="checkbox" id="inlineCheckbox1" value="portage">
-                  <label class="form-check-label category-choice" for="inlineCheckbox1"><p>Portage</p></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="hidden" type="checkbox" id="inlineCheckbox2" value="Simulation">
-                  <label class="form-check-label category-choice" for="inlineCheckbox2"><p>Simulation</p></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Mission">
-                  <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Mission</p></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Conseil">
-                  <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Conseil</p></label>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox1" value="portage">
+                    <label class="form-check-label category-choice" for="inlineCheckbox1"><p>Portage</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox2" value="Simulation">
+                    <label class="form-check-label category-choice" for="inlineCheckbox2"><p>Simulation</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Mission">
+                    <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Mission</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Conseil">
+                    <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Conseil</p></label>
+                  </div>
                 </div>
               </div>
               <div class="text-center">
-                <input type="submit" value="ENVOYER" class="btn-embarq">
+                <input type="submit" value="ENVOYER" class="btn-embarq" id="embarq-submit">
               </div>
             </form>
           </div>
@@ -69,6 +70,7 @@
       </div>
     </div>
   </div>
+
   <div class="wrapper-grey">
     <div class="row">
       <div class="col-xs-12 col-sm-8">
@@ -116,11 +118,30 @@
     title:"You are here!"
   });
   </script>
-
-
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+  <!-- Load jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--POST form data to zapier on submit -->
+    <script>
+    $('#myForm').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            url:'https://hooks.zapier.com/hooks/catch/2588268/z3mbz4/',
+            type:'post',
+            data:$('#embarq-form').serialize(),
+            success:function(){
+              // Redirect to another success page
+              window.location = "www.embarq.fr";
+            }
+        });
+    });
+    </script>
+
 </div>
+
+
 
