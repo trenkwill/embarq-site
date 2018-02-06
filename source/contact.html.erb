@@ -11,19 +11,19 @@
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="prenom"><p>Prénom</p></label>
-                    <input type="text" class="form-control" id="prenom" placeholder="Bob" name="prenom" required>
+                    <input type="text" class="form-control" id="prenom" placeholder="Jean" name="prenom" required>
                   </div>
                 </div>
                 <div class="col-xs-6">
                   <div class="form-group">
                     <label for="nom"><p>Nom</p></label>
-                    <input type="text" class="form-control" id="nom" placeholder="Sponge" name="nom" required>
+                    <input type="text" class="form-control" id="nom" placeholder="Barq" name="nom" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="email"><p>Email</p></label>
-                <input type="email" class="form-control" id="email" placeholder="bob@gmail.com" name="email" required>
+                <input type="email" class="form-control" id="email" placeholder="jean@gmail.com" name="email" required>
               </div>
               <div class="row">
                 <div class="col-xs-6">
@@ -123,24 +123,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   <!-- Load jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
 
-    <!--POST form data to zapier on submit -->
-    <script>
-    $('#myForm').submit(function(e){
+  <script>
+    // POST form data to zapier on submit
+    $('#embarq-form').submit(function(e){
         e.preventDefault();
         $.ajax({
-            url:'https://hooks.zapier.com/hooks/catch/2588268/z3mbz4/',
+            url:'https://hooks.zapier.com/hooks/catch/2588268/z2mzj1/',
             type:'post',
             data:$('#embarq-form').serialize(),
             success:function(){
               // Redirect to another success page
-              window.location = "www.embarq.fr";
+              window.location = "/";
             }
         });
     });
-    </script>
-
+  </script>
 </div>
 
 
