@@ -1,0 +1,147 @@
+<div id="contact">
+  <div class="wrapper-grey">
+    <div class="container padded">
+      <h2 class="text-center">Contactez-nous</h2>
+      <h5 class="text-center">Vous souhaitez plus d'informations sur nos services ou venir boire un café ? <br>On vous répond dans l'heure !</h5>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <div class="contact-form">
+            <form id="embarq-form">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-group">
+                    <label for="prenom"><p>Prénom</p></label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Jean" name="prenom" required>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="form-group">
+                    <label for="nom"><p>Nom</p></label>
+                    <input type="text" class="form-control" id="nom" placeholder="Barq" name="nom" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email"><p>Email</p></label>
+                <input type="email" class="form-control" id="email" placeholder="jean@gmail.com" name="email" required>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-group">
+                    <label for="phone"><p>Téléphone</p></label>
+                    <input type="text" class="form-control" id="phone" placeholder="06 54 78 97 43" name="phone" required>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="form-group">
+                    <label for="ville"><p>Ville</p></label>
+                    <input type="text" class="form-control" id="ville" placeholder="Paris" name="ville" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="interestby"><p>Vous êtes intéressé par :</p></label>
+                <div class="category-choices">
+
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox1" value="portage">
+                    <label class="form-check-label category-choice" for="inlineCheckbox1"><p>Portage</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox2" value="Simulation">
+                    <label class="form-check-label category-choice" for="inlineCheckbox2"><p>Simulation</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Mission">
+                    <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Mission</p></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="hidden" type="checkbox" id="inlineCheckbox3" value="Conseil">
+                    <label class="form-check-label category-choice" for="inlineCheckbox3"><p>Conseil</p></label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <input type="submit" value="ENVOYER" class="btn-embarq" id="embarq-submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper-grey">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div id="map" style="width: 100%;height: 500px;"></div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="coordonne">
+          <div class="coordonne-contact">
+            <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Adresse</h5>
+            <p>3 rue de la boule rouge</p>
+            <p>75009 Paris - France</p>
+            <h5><i class="fa fa-mobile" aria-hidden="true"></i>
+        Téléphone</h5>
+            <p>+33 (0)1 79 34 78 45</p>
+            <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail</h5>
+            <a href="mailto:contact@embarq.fr">contact@embarq.fr</a>
+            <div class="social-links">
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start code js pour Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.87335849999999,2.344544199999973);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title:"You are here!"
+  });
+  </script>
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- Load jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+
+  <script>
+    // POST form data to zapier on submit
+    $('#embarq-form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            url:'https://hooks.zapier.com/hooks/catch/2588268/z2mzj1/',
+            type:'post',
+            data:$('#embarq-form').serialize(),
+            success:function(){
+              // Redirect to another success page
+              window.location = "/";
+            }
+        });
+    });
+  </script>
+</div>
+
+
+
