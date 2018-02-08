@@ -1,0 +1,32 @@
+.banner-portage{
+  height: 82vh;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), image-url("banner.jpg");
+  background-size: cover !important;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h6{
+  font-size: 21px;
+  color: white;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.encart-titre{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 4px 4px 8px 4px rgba(123,142,189,0.35);
+  width: 60%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
