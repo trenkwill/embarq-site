@@ -43,9 +43,182 @@
       </div>
     </div>
   </div>
-<div class="wrapper-grey">
+  <div class="wrapper-grey padded">
+  <h3 class="text-center">Simulez votre revenu</h3>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+            <!--calculator start-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/2.0.10/autoNumeric.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+        <div class="calculator__embarq">
+          <div class="calc__embarq_title">Simulateur de salaire</div>
+          <div class="calc__embarq_subtitle">Je connais :</div>
+          <div class="calc__embarq_row">
+            <div class="switch-field">
+              <input type="radio" id="calc_ma_facturation" name="switch_2" value="facturation" />
+              <label for="calc_ma_facturation">ma facturation</label>
+              <input type="radio" id="calc_salaire_brut" name="switch_2" value="brut" />
+              <label for="calc_salaire_brut">mon salaire brut</label>
+              <input type="radio" id="calc_salaire_net" name="switch_2" value="salairenet" />
+              <label for="calc_salaire_net">mon salaire net</label>
+              <div style="clear:left;"></div>
+            </div>
 
+          </div>
+          <div class="calc__embarq_hidden">
+            <div class="calc__embarq_row">
+                <div class="calc__embarq_input_label">
+                    <span id="embarq_input_label">Facturation mensuelle en €:</span>
+                    <input type="text" id="calc__embarq_user_input">
+                </div>
+            </div>
+            <div class="calc__embarq_row">
+                <div class="calc__embarq_input_label">
+                    <span>Je souhaite déclarer des frais professionnels:</span>
+                    <div class="switch-field switch_short">
 
-</div>
+                        <input type="radio" id="calc__embarq_professionnels_yes" name="switch_professionnels" value="yes" checked/>
+                        <label for="calc__embarq_professionnels_yes">oui</label>
+                        <input type="radio" id="calc__embarq_professionnels_no" name="switch_professionnels" value="no" />
+                        <label for="calc__embarq_professionnels_no">non</label>
+
+                        <div style="clear:left;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calc__embarq_row calc_input_row">
+                <div class="calc__embarq_input_label">
+                    <span>Eventuels frais facturés au client:</span>
+                    <input type="text" id="calc__embarq_client">
+                </div>
+            </div>
+            <div class="calc__embarq_row calc_input_row">
+                <div class="calc__embarq_input_label">
+                    <span>Eventuels frais de fonctionnement:</span>
+                    <input type="text" id="calc__embarq_fonctionnement">
+                </div>
+            </div>
+            <div class="calc__embarq_row">
+                <a href="#" id="calc__embarq_calculate" class="calc__embarq_button" onclick="calcuate_Embarq();return false;">Calculer</a>
+            </div>
+          </div>
+          <div class="calc__embarq_popup">
+              <div class="calc__embarq_popup_container">
+
+                  <div class="calc__embarq_popup_close">
+                      <i class="fas fa-times"></i>
+                  </div>
+                  <div class="calc__embarq_popup_main">
+                      <div class="calc__embarq_popup_title">Résultat de votre simulation</div>
+                      <div class="calc__embarq_popup_results"></div>
+                      <div class="calc__embarq_popup_button">
+                          <a href="http://google.com" target="_blank" class="calc__embarq_button">Contactez-nous</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <script>
+            Number.prototype.formatMoney = function (c, d, t) {
+                var n = this,
+                    c = isNaN(c = Math.abs(c)) ? 2 : c,
+                    d = d == undefined ? "." : d,
+                    t = t == undefined ? "," : t,
+                    s = n < 0 ? "-" : "",
+                    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+                    j = (j = i.length) > 3 ? j % 3 : 0;
+                return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(
+                    /(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(
+                    n - i).toFixed(c).slice(2) : "");
+            };
+            jQuery(function () {
+
+                jQuery('.calc__embarq_popup_close').click(function () {
+                    jQuery('.calc__embarq_popup').fadeOut();
+                });
+                jQuery('.calculator__embarq input[name="switch_2"]').change(function () {
+                    jQuery('.calc__embarq_hidden').fadeIn();
+                    if (jQuery(this).filter(':checked').val() == "facturation") {
+                        jQuery('#embarq_input_label').html('Facturation mensuelle en €:');
+                    }
+                    if (jQuery(this).filter(':checked').val() == "brut") {
+                        jQuery('#embarq_input_label').html('Salaire brut mensuel en €:');
+                    }
+                    if (jQuery(this).filter(':checked').val() == "salairenet") {
+                        jQuery('#embarq_input_label').html('Salaire net mensuel en €:');
+                    }
+                });
+                jQuery('.calculator__embarq input[name="switch_professionnels"]').change(function () {
+                    if (jQuery(this).filter(':checked').val() == "yes") {
+                        jQuery('.calc_input_row').css('display', 'block');
+                    } else {
+                        jQuery('.calc_input_row').css('display', 'none');
+                        jQuery('.calc_input_row input').autoNumeric('set', '');
+                    }
+                });
+                jQuery('.calculator__embarq input[type="text"]').autoNumeric('init', {
+                    currencySymbol: '',
+                    digitGroupSeparator: ',',
+                    decimalCharacter: '.',
+                    decimalPlacesOverride: 2,
+                    minimumValue: -0,
+                    maximumValue: 9999999999999.99
+                });
+            });
+
+            function calcuate_Embarq() {
+                var connais = jQuery("input[name=switch_2]:checked").val();
+                var switch_professionnels = jQuery("input[name=switch_professionnels]:checked").val();
+                var calc__embarq_user_input = parseFloat(jQuery('#calc__embarq_user_input').autoNumeric('get')) ||
+                    0; //fm, sb , sn
+                if (calc__embarq_user_input == 0) {
+                    return false;
+                }
+                var calc__embarq_fonctionnement = parseFloat(jQuery('#calc__embarq_fonctionnement').autoNumeric(
+                    'get')) || 0; //fd
+                var calc__embarq_client = parseFloat(jQuery('#calc__embarq_client').autoNumeric('get')) || 0; //ff
+                var result_calc = {
+                    "facturation": {
+                        "factu": calc__embarq_user_input,
+                        "brut": calc__embarq_user_input * 0.6330 + calc__embarq_fonctionnement * 0.69,
+                        "snet": calc__embarq_user_input * 0.4865 + calc__embarq_fonctionnement * 0.46 +
+                            calc__embarq_client
+                    },
+                    "brut": {
+                        "factu": calc__embarq_user_input * 1.5798,
+                        "brut": calc__embarq_user_input + calc__embarq_fonctionnement * 0.69,
+                        "snet": calc__embarq_user_input * 0.4865 + calc__embarq_fonctionnement * 0.46 +
+                            calc__embarq_client
+                    },
+                    "salairenet": {
+                        "factu": calc__embarq_user_input * 2.0552,
+                        "brut": calc__embarq_user_input * 1.3009 + calc__embarq_fonctionnement * 0.69,
+                        "snet": calc__embarq_user_input + calc__embarq_fonctionnement * 0.46 +
+                            calc__embarq_client
+                    }
+                };
+
+                jQuery('.calc__embarq_popup_results').html('<div>Votre facturation mensuelle: <span>' + (
+                        result_calc[connais]["factu"]).formatMoney(2, '.',
+                        ' ') +
+                    ' €</span></div><div>Votre salaire brut: <span>' + (result_calc[connais]["brut"]).formatMoney(
+                        2,
+                        '.',
+                        ' ') +
+                    ' €</span></div><div>Votre salaire net: <span>' + (result_calc[connais]["snet"]).formatMoney(
+                        2, '.',
+                        ' ') +
+                    ' €</span></div>');
+                jQuery('.calc__embarq_popup').slideDown().addClass('.calc__embarq_popup_show ');
+                jQuery('.calc__embarq_popup_container').addClass('.calc__embarq_popup_show ');
+            }
+        </script>
+        <!--calculator end-->
+
+      </div>
+      <div class="col-xs-12 col-md-6"></div>
+    </div>
+  </div>
 
 </div>
