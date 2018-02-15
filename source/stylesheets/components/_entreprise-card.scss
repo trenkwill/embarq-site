@@ -1,63 +1,121 @@
-
-  /* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
+#wrapper{
+  overflow: hidden;
 }
 
-.flip-container, .front, .back {
-  width: 70%;
-  height: 310px;
-}
-
-/* flip speed goes here */
-.flipper {
-  transition: 1s ease-in-out;
-  transform-style: preserve-3d;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 0px 12px 0px rgba(148,148,148,0.4);
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  margin: 30px 30px;
-  // position: relative;
-  // left: 0;
-  // top: 0;
-  border-top: 10px solid #4eb1ce;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-}
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
+.flip-posts{
+  overflow: hidden;
+  padding: 30px 0;
   position: relative;
+}
+
+.flip-posts .post{
+  margin-bottom: 50px;
+}
+
+.flip-posts h2{
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.card-post {
+  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+  perspective: 800px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 
 }
 
-/* back, initially hidden pane */
+.content-frame{
+  width: 75%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+
+.front,
 .back {
-  transform: rotateY(180deg);
   position: absolute;
-  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  line-height: 300px;
+  text-align: center;
+  padding: 10px;
+  background: white;
+  border-top: 10px solid #4eb1ce;
+  border-radius: 10px;
+    box-shadow: 2px 0px 12px 0px rgba(148,148,148,0.4);
+}
+
+.back {
+  background: white;
+  color: black;
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+}
+
+.card-post:hover .content {
+  transform: rotateY( -180deg);
+  -webkit-transform: rotateY( -180deg);
+}
+.ico-holder{
+  overflow: hidden;
+  text-align: center;
+  line-height: normal;
+}
+
+.flip-list{
+  overflow: hidden;
+  padding:0;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 100%;
+}
+
+.flip-list li{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.flip-list li:after{
+  content:"\f105";
+  font-family:'FontAwesome';
+  font-size: 20px;
+  line-height: 18px;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
   left: 0;
+  color: #4cb0cd;
 }
 
-.content-card{
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
+@media (min-width: 768px) {
 
-.logo-card{
-  height: 180px;
-  width: 180px;
-  position: absolute;
-  left: 110px;
-  bottom: 10px;
+  .flip-posts h2{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
 }
