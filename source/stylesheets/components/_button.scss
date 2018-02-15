@@ -15,6 +15,27 @@
     }
 }
 
+.main-btn {
+  color: white;
+  margin: 2em 1em;
+  padding: 1em 2em;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(0,186,242,1);
+  // opacity: 0.8;
+  text-shadow: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .15s ease;
+  display: inline-block;
+    &:hover {
+      background: rgba(0,169,230,1);
+      transform: translateY(-1px);
+      text-decoration: none;
+      color: white;
+    }
+}
 
 .btn-consultant{
   color: rgba(0,169,230,1);
