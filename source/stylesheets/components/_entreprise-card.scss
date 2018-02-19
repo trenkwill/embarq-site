@@ -33,8 +33,6 @@
   height: 100%;
   transition: all 1.5s ease;
   -webkit-transition: all 1.5s ease;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
 
 }
 
@@ -59,19 +57,30 @@
   background: white;
   border-top: 10px solid #4eb1ce;
   border-radius: 10px;
-    box-shadow: 2px 0px 12px 0px rgba(148,148,148,0.4);
+   box-shadow: 2px 0px 12px 0px rgba(148,148,148,0.4);
+   transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
 }
 
 .back {
   background: white;
   color: black;
-  transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
-
-.card-post:hover .content {
+.front {
+  background: white;
+  color: black;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+.card-post:hover .front {
   transform: rotateY( -180deg);
   -webkit-transform: rotateY( -180deg);
+}
+.card-post:hover .back {
+  transform: rotateY( 0deg);
+  -webkit-transform: rotateY( 0deg);
 }
 .ico-holder{
   overflow: hidden;
@@ -84,8 +93,8 @@
   padding:0;
   margin: 0 auto;
   list-style: none;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.4;
   text-align: left;
   max-width: 100%;
 }
@@ -117,5 +126,14 @@
   .flip-posts h2{
     margin-bottom: 25px;
     font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .flip-list{
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 }

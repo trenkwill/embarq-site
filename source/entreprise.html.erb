@@ -6,14 +6,14 @@
       <div id="wrapper">
           <div class="flip-posts">
               <div class="row">
-                  <div class="col-sm-5 post offset-md-1">
+                  <div class="col-md-5 post col-md-push-1">
                       <div class="card-post">
                           <div class="content">
                               <div class="front">
                                   <div class="content-frame">
                                       <h4>OPTIMISER LE COÛT DE LA GESTION DE VOS PROJETS</h4>
                                       <div class="ico-holder">
-                                          <img src="images/calculator.png" alt="image description">
+                                          <img src="images/calculator.png" alt="financier">
                                       </div>
                                   </div>
                               </div>
@@ -29,14 +29,14 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-sm-5 post">
+                  <div class="col-md-5 post col-md-push-1">
                       <div class="card-post">
                           <div class="content">
                               <div class="front">
                                   <div class="content-frame">
                                       <h4>SIMPLIFIER LE RECRUTEMENT ET L’EMBAUCHE</h4>
                                       <div class="ico-holder">
-                                          <img src="images/chat.png" alt="image description">
+                                          <img src="images/chat.png" alt="administratif">
                                       </div>
                                   </div>
                               </div>
@@ -52,14 +52,14 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-sm-5 post offset-md-1">
+                  <div class="col-md-5 post col-md-push-1">
                       <div class="card-post">
                           <div class="content">
                               <div class="front">
                                   <div class="content-frame">
                                       <h4>SECURISER VOTRE ACTIVITE</h4>
                                       <div class="ico-holder">
-                                          <img src="images/lockedpadlockoutline.png" alt="image description">
+                                          <img src="images/lockedpadlockoutline.png" alt="sociaux">
                                       </div>
                                   </div>
                               </div>
@@ -75,14 +75,14 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-sm-5 post">
+                  <div class="col-md-5 post col-md-push-1">
                       <div class="card-post">
                           <div class="content">
                               <div class="front">
                                   <div class="content-frame">
                                       <h4>INTEGRER DES COMPETENCES UNIQUES</h4>
                                       <div class="ico-holder">
-                                          <img src="images/multiskillsemployee.png" alt="image description">
+                                          <img src="images/multiskillsemployee.png" alt="sourcing">
                                       </div>
                                   </div>
                               </div>
@@ -102,4 +102,120 @@
           </div>
       </div>
     </div>
+  </div>
+  <div class="wrapper-grey padded" id="simul">
+    <div id="encart-simul">
+      <h3 class="text-center">Simulez le coût d'une mission</h3>
+    </div>
+<!--   <h3 class="text-center">Simulez votre revenu</h3>
+  <br> -->
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+            <!--calculator start-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/2.0.10/autoNumeric.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+        <div class="calculator__embarq">
+          <div class="calc__embarq_subtitle">Je connais :</div>
+          <div class="calc__embarq_row">
+            <div class="switch-field">
+              <input type="radio" id="calc_ma_facturation" name="switch_2" value="facturation" />
+              <label for="calc_ma_facturation">ma facturation</label>
+              <input type="radio" id="calc_salaire_brut" name="switch_2" value="brut" />
+              <label for="calc_salaire_brut">mon salaire brut</label>
+              <input type="radio" id="calc_salaire_net" name="switch_2" value="salairenet" />
+              <label for="calc_salaire_net">mon salaire net</label>
+              <div style="clear:left;"></div>
+            </div>
+
+          </div>
+          <div class="calc__embarq_hidden">
+            <div class="calc__embarq_row">
+                <div class="calc__embarq_input_label">
+                    <span id="embarq_input_label">Facturation mensuelle en € :</span>
+                    <input type="text" id="calc__embarq_user_input">
+                </div>
+            </div>
+            <div class="calc__embarq_row">
+                <div class="calc__embarq_input_label">
+                    <span>Je souhaite déclarer des frais professionnels :</span>
+                    <div class="switch-field switch_short">
+
+                        <input type="radio" id="calc__embarq_professionnels_yes" name="switch_professionnels" value="yes" checked/>
+                        <label for="calc__embarq_professionnels_yes">oui</label>
+                        <input type="radio" id="calc__embarq_professionnels_no" name="switch_professionnels" value="no" />
+                        <label for="calc__embarq_professionnels_no">non</label>
+
+                        <div style="clear:left;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calc__embarq_row calc_input_row">
+                <div class="calc__embarq_input_label">
+                    <span>Eventuels frais facturés au client :</span>
+                    <input type="text" id="calc__embarq_client">
+                </div>
+            </div>
+            <div class="calc__embarq_row calc_input_row">
+                <div class="calc__embarq_input_label">
+                    <span>Eventuels frais de fonctionnement :</span>
+                    <input type="text" id="calc__embarq_fonctionnement">
+                </div>
+            </div>
+            <div class="calc__embarq_row">
+                <a href="#" id="calc__embarq_calculate" class="calc__embarq_button" onclick="calcuate_Embarq();return false;">Calculer</a>
+            </div>
+          </div>
+          <div class="calc__embarq_popup">
+              <div class="calc__embarq_popup_container">
+
+                  <div class="calc__embarq_popup_close">
+                      <i class="fas fa-times"></i>
+                  </div>
+                  <div class="calc__embarq_popup_main">
+                      <div class="calc__embarq_popup_title">Résultat de votre simulation</div>
+                      <div class="calc__embarq_popup_results"></div>
+                        <div class="text-center">
+                          <%= link_to "Contactez-nous", "contact.html", class: "btn-embarq" %>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container padded-top">
+        <div class="col-xs-12 col-md-6">
+          <p class="line">Les frais de fonctionnement c'est quoi ?</p>
+          <p>Les frais de fonctionnement correspondent aux frais non pris en charge par le client mais qui participent au bon fonctionnement de l'activité du freelance porté (frais de bouche, transport, téléphonie...) Ces frais ne sont pas imposables !</p>
+          <p class="line">Les frais refacturés c'est quoi ?</p>
+          <p>Les frais refacturés correspondent aux frais pris en charge par le client (frais kilométriques, hébergement...) et négociés avant le début de votre mission. Ces frais ne rentrent pas dans le calcul du salaire brut, ils sont rajoutés directement au salaire net.</p>
+          <p class="line">Comment nous nous rémunérons?</p>
+          <p>Nous prenons des frais de gestion sur le volume de facturation. Cette simulation est calculée sur la base d'un taux de frais de gestion de 7%. Ce taux est dégressif selon le volume de facturation. </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="container padded-top">
+
+        <h4>Ils nous font confiance</h4>
+        <div class="row">
+          <div class="col-12">
+            <a href="https://www.axa.fr/" class="brands img" target="blank">
+              <img src="images/logo_axa.png" alt="logoaxa"  height="100px">
+            </a>
+            <a href="https://www.hays.fr/" class="brands img" target="blank">
+              <img src="images/logo_hays.jpg" alt="logohays">
+            </a>
+            <a href="http://www.cliveman.com/" class="brands img" target="blank">
+              <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70px">
+            </a>
+            <a href="http://www.strategepartners.eu/" class="brands img" target="blank">
+              <img src="images/logo_stratege.png" alt="logostrategepartners" height="70px">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
