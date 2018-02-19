@@ -117,26 +117,27 @@
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <!-- Load jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-  </script>
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
 
-  <script>
-    // POST form data to zapier on submit
-    $('#embarq-form').submit(function(e){
-        e.preventDefault();
-        $.ajax({
-            url:'https://hooks.zapier.com/hooks/catch/2588268/z2mzj1/',
-            type:'post',
-            data:$('#embarq-form').serialize(),
-            success:function(){
-              // Redirect to another success page
-              window.location = "/";
-            }
-        });
-        // console.log($('#embarq-form').serialize());
-    });
-  </script>
+<script>
+// POST form data to zapier on submit
+$('#embarq-form').submit(function(e){
+e.preventDefault();
+$.ajax({
+url:'https://hooks.zapier.com/hooks/catch/2588268/z2mzj1/',
+type:'post',
+data:$('#embarq-form').serialize(),
+success:function(){
+// Redirect to another success page
+window.location = "/";
+}
+});
+});
+</script>
+
+
 
 </div>
 
