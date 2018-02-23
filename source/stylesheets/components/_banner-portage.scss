@@ -1,5 +1,5 @@
 .banner-portage{
-  height: 82vh;
+  height: 100%;
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), image-url("banner-portage.jpg");
   background-size: cover !important;
   text-align: center;
@@ -23,7 +23,7 @@ h6{
   right: 0;
   margin: auto;
   box-shadow: 4px 4px 8px 4px rgba(123,142,189,0.35);
-  width: 60%;
+  width: 70%;
   background-color: white;
   display: flex;
   align-items: center;
