@@ -11,3 +11,6 @@ gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
+#others
+gem 'middleman-protect-emails'
+

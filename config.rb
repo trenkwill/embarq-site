@@ -23,3 +23,6 @@ end
 
 # Use “pretty” URLs (without the `.html` suffix)
 activate :directory_indexes
+
+#pencrypts email links on my app
+activate :protect_emails
