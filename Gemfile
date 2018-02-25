@@ -11,3 +11,8 @@ gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
+#others
+gem 'middleman-protect-emails'
+gem "middleman-imageoptim", :git => "https://github.com/plasticine/middleman-imageoptim", :branch => "master"
+gem 'middleman-minify-html'
+

@@ -11,6 +11,7 @@ page '/*.txt', layout: false
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html, remove_input_attributes: false
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
@@ -23,3 +24,9 @@ end
 
 # Use “pretty” URLs (without the `.html` suffix)
 activate :directory_indexes
+
+#pencrypts email links on my app
+activate :protect_emails
+
+#Compress images
+activate :imageoptim
