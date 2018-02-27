@@ -16,3 +16,5 @@ gem 'middleman-protect-emails'
 # gem "middleman-imageoptim", :git => "https://github.com/plasticine/middleman-imageoptim", :branch => "master"
 gem 'middleman-minify-html'
 
+#add sitemap
+gem 'middleman-search_engine_sitemap'
