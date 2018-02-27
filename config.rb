@@ -28,5 +28,7 @@ activate :directory_indexes
 #pencrypts email links on my app
 activate :protect_emails
 
-# #Compress images
-# activate :imageoptim
+#config sitemap
+set :url_root, 'https://www.embarq.fr'
+
+activate :search_engine_sitemap
