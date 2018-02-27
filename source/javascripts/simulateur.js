@@ -66,7 +66,7 @@ function calcuate_Embarq() {
         "brut": {
             "factu": calc__embarq_user_input * 1.5798,
             "brut": calc__embarq_user_input + calc__embarq_fonctionnement * 0.69,
-            "snet": calc__embarq_user_input * 0.4865 + calc__embarq_fonctionnement * 0.46 +
+            "snet": calc__embarq_user_input * 0.7687 + calc__embarq_fonctionnement * 0.46 +
                 calc__embarq_client
         },
         "salairenet": {

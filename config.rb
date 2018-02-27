@@ -27,6 +27,3 @@ activate :directory_indexes
 
 #pencrypts email links on my app
 activate :protect_emails
-
-# #Compress images
-# activate :imageoptim
