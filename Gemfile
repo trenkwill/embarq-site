@@ -18,3 +18,5 @@ gem 'middleman-minify-html'
 
 #add sitemap
 gem 'middleman-search_engine_sitemap'
+
+gem 'middleman-google-analytics', '~> 3.0'
