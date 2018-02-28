@@ -32,3 +32,39 @@ activate :protect_emails
 set :url_root, 'https://www.embarq.fr'
 
 activate :search_engine_sitemap
+
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+    ga.tracking_id = 'UA-114918357-1'
+
+    # Removing the last octet of the IP address (default = false)
+    ga.anonymize_ip = false
+
+    # Tracking across a domain and its subdomains (default = nil)
+    ga.domain_name = 'embarq.fr'
+
+    # Tracking across multiple domains and subdomains (default = false)
+    ga.allow_linker = false
+
+    # Enhanced Link Attribution (default = false)
+    ga.enhanced_link_attribution = false
+
+    # Log detail messages to the console (default = false)
+    ga.debug = false
+
+    # Trace debugging will output more verbose information to the console (default = false)
+    ga.debug_trace = false
+
+    # Disable extension (default = false)
+    ga.disable = true
+
+    # Testing your implementation without sending hits (default = true) in development
+    ga.test = true
+
+    # Compress the JavaScript code (default = false)
+    ga.minify = false
+
+    # Output style - :html includes <script> tag (default = :html)
+    ga.output = :js
+  end
+
