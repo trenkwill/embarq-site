@@ -1,4 +1,4 @@
-const items = document.querySelectorAll(".accordion a");
+var items = document.querySelectorAll(".accordion a");
 
 function toggleAccordion(){
   this.classList.toggle('active');
