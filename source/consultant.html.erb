@@ -144,9 +144,23 @@
                 <p>Nous prenons des frais de gestion sur le volume de facturation. Cette simulation est calculée sur la base d'un taux de frais de gestion de 7%. Ce taux est dégressif selon le volume de facturation.</p>
               </div>
             </div>
+            <script>
+            var accords = document.querySelectorAll(".accordion a");
+
+            function toggleAccordion(){
+              this.classList.toggle('active');
+              this.nextElementSibling.classList.toggle('active');
+            }
+
+            accords.forEach(function(accordb) {
+                accordb.addEventListener('click', toggleAccordion);
+            });
+
+            </script>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
