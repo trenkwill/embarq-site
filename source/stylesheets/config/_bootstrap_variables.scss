@@ -31,6 +31,10 @@ $border-radius-small: 2px;
   padding-top: 70px;
 }
 
+.padded-topo{
+  padding-top: 35px;
+}
+
 .wrapper-grey {
   background: #f1f5fa;
   position: relative;
@@ -43,6 +47,6 @@ $border-radius-small: 2px;
 .rowicone{
   display: flex;
   align-items: center;
- justify-content: space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
