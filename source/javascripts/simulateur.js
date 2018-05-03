@@ -35,14 +35,16 @@ jQuery(function () {
             jQuery('.calc_input_row input').autoNumeric('set', '');
         }
     });
-    jQuery('.calculator__embarq input[type="text"]').autoNumeric('init', {
-        currencySymbol: '',
-        digitGroupSeparator: ',',
-        decimalCharacter: '.',
-        decimalPlacesOverride: 2,
-        minimumValue: -0,
-        maximumValue: 9999999999999.99
-    });
+    if ($('.calculator__embarq input[type="text"]')[0]) {
+      jQuery('.calculator__embarq input[type="text"]').autoNumeric('init', {
+          currencySymbol: '',
+          digitGroupSeparator: ',',
+          decimalCharacter: '.',
+          decimalPlacesOverride: 2,
+          minimumValue: -0,
+          maximumValue: 9999999999999.99
+      });
+    };
 });
 
 function calcuate_Embarq() {
