@@ -79,17 +79,17 @@ function calcuate_Embarq() {
         }
     };
 
-    jQuery('.calc__embarq_popup_results').html('<div>Votre facturation mensuelle: <span>' + (
+    jQuery('.calc__embarq_popup_results').html('<div>Votre facturation mensuelle: <span><input type="text" value="' + (
             result_calc[connais]["factu"]).formatMoney(2, '.',
             ' ') +
-        ' €</span></div><div>Votre salaire brut: <span>' + (result_calc[connais]["brut"]).formatMoney(
+        ' €" name="FACTU_M"></span></div><div>Votre salaire brut: <span><input type="text" value="' + (result_calc[connais]["brut"]).formatMoney(
             2,
             '.',
             ' ') +
-        ' €</span></div><div>Votre salaire net: <span>' + (result_calc[connais]["snet"]).formatMoney(
+        ' €" name="SALAIRE_BR"></span></div><div>Votre salaire net: <span><input type="text" value="' + (result_calc[connais]["snet"]).formatMoney(
             2, '.',
             ' ') +
-        ' €</span></div>');
-    jQuery('.calc__embarq_popup').slideDown().addClass('.calc__embarq_popup_show ');
-    jQuery('.calc__embarq_popup_container').addClass('.calc__embarq_popup_show ');
+        ' €" name="SALAIRE_NE"></span></div>');
+    // jQuery('.calc__embarq_popup').slideDown().addClass('.calc__embarq_popup_show ');
+    // jQuery('.calc__embarq_popup_container').addClass('.calc__embarq_popup_show ');
 }

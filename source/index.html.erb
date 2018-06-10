@@ -1,73 +1,73 @@
 
-<div class="banner">
-  <div class="container">
-    <div class="banner-content">
-      <h1>Découvrez une nouvelle façon de travailler</h1>
-      <h2>Devenez indépendant avec les avantages du salarié</h2>
-      <%= link_to "Simuler votre revenu", "consultant.html#simul", class: "main-btn" %>
+<div class="wrapper-home">
+    <div>
+
+      <h1 class="mb">Découvrez une <span class="color-brand">nouvelle</span> <br> façon de travailler</h1>
+      <h2>Devenez indépendant avec les <br> avantages du salarié</h2>
+      <%= link_to "Simuler votre revenu", "consultant.html#simul", class: "btn btn-primary btn-lg mt" %>
     </div>
-  </div>
-  <div id="scroll" class="demo">
-    <a><span></span></a>
-  </div>
+    <img src="images/bird-1.svg" alt="bird" class="bird-1">
+    <img src="images/bird-2.svg" alt="bird" class="bird-2">
+    <div id="scroll" class="demo">
+      <a><span></span></a>
+    </div>
 </div>
 
-<div class="wrapper-white padded">
+<div class="wrapper-blue-dark">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6">
-        <h3>Le portage salarial en quelques mots</h3>
+        <h3 class="title h1 mb">Le portage salarial en quelques mots</h3>
         <p>Le portage salarial permet de concilier <b>les avantages de l'indépendance et du salariat.</b>
-  <br><br>
-  <b>Le freelance porté</b> fixe son tarif, négocie avec son client et assure la prestation.
-  <br><br>
-  Embarq prend en charge toute <b>la gestion administrative</b> et reverse une rémunération au freelance sous forme de salaire.
-  <br><br>
-  Le client final lui ne reçoit qu'une seule facture.</p>
-  <hr>
-  <%= link_to "En savoir plus", "portage.html", class: "btn-embarq" %>
-<!--   <a href="#" class="btn-embarq">En savoir plus</a> -->
+        <br><br>
+        <b>Le freelance porté</b> fixe son tarif, négocie avec son client et assure la prestation.
+        <br><br>
+        Embarq prend en charge toute <b>la gestion administrative</b> et reverse une rémunération au freelance sous forme de salaire.
+        <br><br>
+        Le client final lui ne reçoit qu'une seule facture.</p>
+        <hr>
+        <%= link_to "En savoir plus", "portage.html", class: "btn btn-primary btn-lg" %>
       </div>
 
       <div class="col-xs-12 col-md-6">
-        <%= image_tag "schema.jpg", id: "schema"%>
+        <%= image_tag "schema.svg", id: "schema"%>
       </div>
 
     </div>
   </div>
 </div>
 
-<div class="wrapper-grey padded text-center">
+<div class="wrapper-white">
   <div class="container">
-    <h4>Pourquoi choisir Embarq ?</h4>
-    <div class="col-xs-12 col-md-4">
-      <div class="card-why">
-        <%= image_tag "accompagnement.png", class: "card-why-logo"%>
+    <h3 class="h1 title title-lg text-center mb+"><span class="color-brand">Pourquoi</span> choisir Embarq ?</h3>
+    <div class="col-md-4">
+      <div class="home__illustration-wrap">
+        <%= image_tag "illustration-1.svg", class: "home__illustration-1"%>
 
-      <h3>Accompagnement</h3>
-      <p>Avec Embarq l’accompagnement c’est pas du pipeau. Nous vous guidons dans le lancement de votre activité et dans le développement de votre business. Vous profitez de nos outils de prospection et de visibilité online.</p>
+        <h3 class="h4 text-bold">Accompagnement</h3>
+        <p>Avec Embarq l’accompagnement c’est pas du pipeau. Nous vous guidons dans le lancement de votre activité et dans le développement de votre business. Vous profitez de nos outils de prospection et de visibilité online.</p>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4">
-      <div class="card-why">
-        <%= image_tag "humain.png", class: "card-why-logo"%>
-        <h3>Humain</h3>
-        <p>Notre identité c’est le service client et le sens du contact. Venez en juger par vous-mêmes et prenons le temps de discuter de vos projets autour d’un café.</p>
-      </div>
+    <div class="col-md-4">
+        <div class="home__illustration-wrap">
+          <%= image_tag "illustration-2.svg", class: "home__illustration-2"%>
+          <h3 class="h4 text-bold">Humain</h3>
+          <p>Notre identité c’est le service client et le sens du contact. Venez en juger par vous-mêmes et prenons le temps de discuter de vos projets autour d’un café.</p>
+        </div>
     </div>
-    <div class="col-xs-12 col-md-4">
-      <div class="card-why">
-        <%= image_tag "conseil.png", class: "card-why-logo"%>
-        <h3>Conseil</h3>
-        <p>Des professionnels expérimentés hyper réactifs vous réservent un conseil personnalisé afin de vous accompagner dans vos démarches et optimiser vos revenus.</p>
-      </div>
+    <div class="col-md-4">
+        <div class="home__illustration-wrap">
+          <%= image_tag "illustration-3.svg", class: "home__illustration-3"%>
+          <h3 class="h4 text-bold">Conseil</h3>
+          <p>Des professionnels expérimentés hyper réactifs vous réservent un conseil personnalisé afin de vous accompagner dans vos démarches et optimiser vos revenus.</p>
+        </div>
     </div>
     </div>
-    <div class="container">
-    <div class="sharevalues">
-      <h4>Vous partagez nos valeurs ?</h4>
-      <h3>Contactez-nous, on vous répond dans l'heure !</h3>
-      <%= link_to "Contactez-nous", "contact.html", class: "btn-embarq" %>
+    <div class="container pt+">
+    <div class="text-center">
+      <h3 class="h2">Vous partagez nos valeurs ?</h3>
+      <h4 class="mb">Contactez-nous, on vous répond dans l'heure !</h4>
+      <%= link_to "Contactez-nous", "contact.html", class: "btn btn-primary btn-lg" %>
 
     </div>
     </div>
@@ -75,50 +75,75 @@
 </div>
 
 
-<div class="wrapper-white padded">
+<div class="wrapper-blue-light mb+">
   <div class="container">
+    <h3 class="h1 title title-lg text-center mb+"> Nos<span class="color-brand">avantages</span></h3>
     <div class="row">
-     <div class="col-xs-12 col-sm-12 col-md-6">
-      <div class="avantages">
-       <h3><mark>Nos avantages</mark></h3>
+      <div class="col-md-3">
+       <div class="home__icon-wrap">
+         <%= image_tag "heart.svg", class: "home__icon-4"%>
+         <h3 class="h4 text-bold mb">Accompagnement</h3>
+         <p>Nous vous mettons à disposition un ensemble d'outils vous permettant de développer votre activité et trouver de nouveaux clients (cartes de visites, site vitrine, offres de missions...)</p>
        </div>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-6">
-      <p><i class="fa fa-shield" aria-hidden="true"></i>  <strong>Protection sociale</p></strong>
-      <p>En étant porté, vous êtes rattaché au régime général et bénéficiez d'une solide protection sociale et d'une mutuelle santé et prévoyance</p>
-      <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-      <strong>Rapidité</p></strong>
-      <p>Devenez indépendant en 24h sans démarche administrative.</p>
-      <p><i class="fa fa-lock" aria-hidden="true"></i>
-      <strong>Logiciel de gestion</p></strong>
-      <p>Vous avez accès à une plateforme digitale consacrée à la gestion de votre activité et un account manager dédié</p>
-      <p><i class="fa fa-rocket" aria-hidden="true"></i>  <strong>Accompagnement</p></strong>
-      <p>Nous vous mettons à disposition un ensemble d'outils vous permettant de développer votre activité et trouver de nouveaux clients (cartes de visites, site vitrine, offres de missions...)</p>
-     </div>
-    </div>
-  </div>
-  <hr>
-</div>
 
-<div class="wrapper-white text-center">
-  <div class="container">
-
-    <h4>Ils nous font confiance</h4>
-    <div class="row">
-      <div class="col-12">
-        <a href="https://www.axa.fr/" class="brands img" target="blank">
-          <img src="images/logo_axa.png" alt="logoaxa"  height="100px">
-        </a>
-        <a href="https://www.hays.fr/" class="brands img" target="blank">
-          <img src="images/logo_hays.jpg" alt="logohays">
-        </a>
-        <a href="https://www.cliveman.com/" class="brands img" target="blank">
-          <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70px">
-        </a>
-        <a href="https://www.strategepartners.eu/" class="brands img" target="blank">
-          <img src="images/logo_stratege.png" alt="logostrategepartners" height="70px">
-        </a>
       </div>
+     <div class="col-md-3">
+      <div class="home__icon-wrap">
+        <%= image_tag "shield.svg", class: "home__icon-1"%>
+        <h3 class="h4 text-bold mb">Protection sociale</h3>
+        <p>En étant porté, vous êtes rattaché au régime général et bénéficiez d'une solide protection sociale et d'une mutuelle santé et prévoyance</p>
+      </div>
+     </div>
+
+     <div class="col-md-3">
+      <div class="home__icon-wrap">
+        <%= image_tag "software.svg", class: "home__icon-3"%>
+        <h3 class="h4 text-bold mb">Logiciel de gestion</h3>
+        <p>Vous avez accès à une plateforme digitale consacrée à la gestion de votre activité et un account manager dédié</p>
+      </div>
+     </div>
+     <div class="col-md-3">
+     <div class="home__icon-wrap">
+        <%= image_tag "rocket.svg", class: "home__icon-2"%>
+       <h3 class="h4 text-bold mb">Rapidité</h3>
+       <p>Devenez indépendant en 24h sans démarche administrative.</p>
+     </div>
+     </div>
+
     </div>
   </div>
 </div>
+
+  <div class="container pt+">
+    <h3 class="h1 title title-lg text-center pt+ mt+ mb+"> Ils nous font <span class="color-brand">confiance</span></h3>
+    <h4></h4>
+
+      <div class="brands">
+        <div class="brands__inner">
+          <a href="https://www.axa.fr/" class="" target="blank">
+            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
+          </a>
+          <a href="https://www.hays.fr/" class="" target="blank">
+            <img src="images/logo_hays.jpg" alt="logohays">
+          </a>
+          <a href="https://www.cliveman.com/" class="" target="blank">
+            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
+          </a>
+          <a href="https://www.strategepartners.eu/" class="" target="blank">
+            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
+          </a>
+          <a href="https://www.axa.fr/" class="" target="blank">
+            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
+          </a>
+          <a href="https://www.hays.fr/" class="" target="blank">
+            <img src="images/logo_hays.jpg" alt="logohays">
+          </a>
+          <a href="https://www.cliveman.com/" class="" target="blank">
+            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
+          </a>
+          <a href="https://www.strategepartners.eu/" class="" target="blank">
+            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
+          </a>
+        </div>
+      </div>
+  </div>

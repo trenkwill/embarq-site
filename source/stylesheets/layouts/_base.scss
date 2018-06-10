@@ -1,0 +1,29 @@
+body {
+  color: $blue-dark;
+  background:#fff;
+}
+
+
+
+// Override other variables below!
+.padded {
+  padding: 70px 0;
+}
+
+.padded-top{
+  padding-top: 70px;
+}
+
+.padded-topo{
+  padding-top: 35px;
+}
+
+.rowicone{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+

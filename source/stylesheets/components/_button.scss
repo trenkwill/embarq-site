@@ -22,7 +22,7 @@
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
-  background: rgba(0,186,242,1);
+  background: $brand-color;
   // opacity: 0.8;
   text-shadow: none;
   text-transform: uppercase;
@@ -56,7 +56,12 @@
     text-decoration: none;
     // transform: translateY(-1px);
   }
+}
 
-
-
+// overide bootstrap btn
+.btn-lg {
+  padding: 20px 30px;
+}
+.btn-xs {
+  padding: 5px !important;
 }

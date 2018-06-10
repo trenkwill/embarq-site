@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="85px" viewBox="0 0 89 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M39.5841659,73.9302326 L34.0423493,68.3050755 C13.4589359,49.8226585 0,37.368204 0,22.0974196 C0,9.64296508 9.50009809,0 21.7700315,0 C28.5009301,0 35.2289675,3.21437548 39.5844044,8.43930877 C43.9309397,3.21437548 50.6677197,0 57.3987772,0 C69.6687107,0 79.1688088,9.64296508 79.1688088,22.0974196 C79.1688088,37.3657838 65.7098728,49.8226585 45.1264594,68.3018485 L39.5841659,73.9302326 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="proposition-3-1-square" transform="translate(-1079.000000, -2872.000000)">
+            <g id="heart" transform="translate(1084.000000, 2877.000000)">
+                <g id="Shape" fill-rule="nonzero">
+                    <use stroke="#EFF7F9" stroke-width="8.40000033" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#476B87" stroke-width="3.60000014" xlink:href="#path-1"></use>
+                </g>
+                <path d="M34,52 C34,52 39.4641031,55.9650877 44.9282062,52" id="Path-12" stroke="#476B87" stroke-width="2" stroke-linecap="round"></path>
+                <ellipse id="Oval-2-Copy" fill="#476B87" cx="27.2091524" cy="39.204556" rx="4.20915237" ry="4.20455599"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#476B87" cx="48.2091524" cy="39.204556" rx="4.20915237" ry="4.20455599"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

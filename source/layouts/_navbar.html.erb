@@ -1,36 +1,32 @@
-<!-- Add navbar -->
-    <div class="navbar-wagon">
-      <!-- Logo -->
-      <a href="/" class="navbar-wagon-brand">
-        <%= image_tag "logo.png"%>
-<!--         <img src="images/logo.png" alt="logo"> -->
-      </a>
 
-      <!-- Right Navigation -->
-      <div class="navbar-wagon-right hidden-xs hidden-sm">
+   <!-- Fixed navbar -->
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a href="#">
+              <% link_to "/" do %>
+              <%= image_tag "logo-new.png", height: "50" %>
+              <% end %>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
 
-        <%= link_to "Portage Salarial", "portage.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Consultant", "consultant.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Entreprise", "entreprise.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "Blog", "https://medium.com/embarq-lab", class: "navbar-wagon-item navbar-wagon-link", target: '_blank' %>
-        <%= link_to "Accès consultant", "https://embarq.laya.fr", class: "navbar-wagon-item navbar-wagon-link", target: '_blank' %>
-        <%= link_to "Contactez-nous", "contact.html", class: "btn-consultant"%>
-
-      </div>
-
-      <!-- Dropdown appearing on mobile only -->
-      <div class="navbar-wagon-item hidden-md hidden-lg">
-        <div class="dropdown">
-          <i class="fa fa-bars fa-lg dropdown-toggle" data-toggle="dropdown"></i>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Portage Salarial", "portage.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
             <li><%= link_to "Consultant", "consultant.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
             <li><%= link_to "Entreprise", "entreprise.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
             <li><%= link_to "Blog", "https://medium.com/embarq-lab", class: "navbar-wagon-item navbar-wagon-link", target: '_blank' %></li>
-            <li><%= link_to "Contact", "contact.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
             <li><%= link_to "Accès consultant", "https://embarq.laya.fr", class: "navbar-wagon-item navbar-wagon-link", target: '_blank' %></li>
+            <li><%= link_to "Contactez-nous", "contact.html", class: "btn btn-xs btn-primary mt--"%></li>
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-    <!-- End of navbar -->

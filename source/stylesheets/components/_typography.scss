@@ -1,0 +1,66 @@
+// overide bootstrap
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, label, p {
+	margin: 0;
+}
+
+.title {
+  font-family: $bebas-light;
+}
+.title-lg {
+  font-size: 70px;
+}
+
+
+.small {
+	font-size: 11px;
+}
+.fa-1 {
+	font-size: 1em;
+}
+.fa-2 {
+	font-size: 2em;
+}
+.fa-3 {
+	font-size: 3em;
+}
+
+
+// text color helpers
+.color-brand {
+  color: $brand-color;
+}
+.color-white {
+	color: #fff;
+}
+.color-blue {
+	color: $blue;
+}
+.color-blue-2 {
+	color: #1673BC;
+}
+.color-blue-3 {
+	color: #3477A1;
+}
+.color-blue-dark {
+	color: $blue-dark;
+}
+
+
+// text weight helpers
+.text-medium {
+	font-weight: 700;
+}
+.text-bold {
+	font-weight: bolder;
+}
+.text-light {
+	font-weight: lighter;
+}
+.text-italic{
+	font-style: italic;
+}
+
+
+legend {
+	border: none;
+}

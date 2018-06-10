@@ -26,6 +26,48 @@ mark {
   color: #48a8e1;
 }
 
-h2{
-  font-size: 31px;
+// misc
+
+.home__illustration-wrap {
+  padding-top: 230px;
+  position: relative;
+  .home__illustration-1 {
+    position: absolute;
+    top: 70px;
+    height: 100px;
+  }
+  .home__illustration-2 {
+    position: absolute;
+    top: 70px;
+    height: 100px;
+  }
+  .home__illustration-3 {
+    position: absolute;
+    top: 0;
+    height: 170px ;
+  }
+}
+.home__icon-wrap {
+  padding-top: 130px;
+  position: relative;
+  .home__icon-1 {
+    position: absolute;
+    top: 0px;
+    height: 90px;
+  }
+  .home__icon-2 {
+    position: absolute;
+    top: 10px;
+    height: 73px;
+  }
+  .home__icon-3 {
+    position: absolute;
+    top: 30px;
+    height: 60px;
+  }
+  .home__icon-4 {
+    position: absolute;
+    top: 35px;
+    height: 60px;
+  }
 }

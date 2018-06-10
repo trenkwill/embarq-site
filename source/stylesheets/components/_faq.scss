@@ -17,26 +17,26 @@
   flex-direction: column;
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
-  color: #333333;
-
-  font-weight: 400;
+  color: #eee;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
-  color: #03b5d2;
   text-decoration: none;
 }
 
 .accordion a:hover::after {
-  border: 1px solid #03b5d2;
+  // border: 1px solid $brand-color;
 }
 
 .accordion a.active {
-  color: #03b5d2;
-  border-bottom: 1px solid #03b5d2;
+  font-weight: bold;
+  color: #fff;
+  // box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  // color: $brand-color;
+  // border-bottom: 1px solid $brand-color;
 }
 
 .accordion a::after {
@@ -46,22 +46,23 @@
   float: right;
   right: 1rem;
   font-size: 1rem;
-  color: #7288a2;
+  color: #fff;
+  background:rgba(255, 255, 255, .4);
   padding: 8px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #7288a2;
+  border: 1px solid #fff;
   text-align: center;
 }
 
 .accordion a.active::after {
   font-family: 'Ionicons';
   content: '\f209';
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .accordion .accordion_content {

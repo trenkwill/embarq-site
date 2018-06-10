@@ -11,42 +11,18 @@ $font-size-base: 18px;
 
 // Colors
 $gray-base:       $gray;
-$brand-primary:   $blue;
-$brand-success:   $green;
+$brand-primary:   $brand-color;
+$brand-success:   $blue-dark;
 $brand-info:      $yellow;
 $brand-danger:    $red;
 $brand-warning:   $orange;
 
 // Buttons & inputs' radius
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
+$border-radius-base:  6px;
+$border-radius-large: 9px;
+$border-radius-small: 4px;
 
-// Override other variables below!
-.padded {
-  padding: 70px 0;
-}
 
-.padded-top{
-  padding-top: 70px;
-}
 
-.padded-topo{
-  padding-top: 35px;
-}
 
-.wrapper-grey {
-  background: #f1f5fa;
-  position: relative;
-}
 
-.wrapper-white {
-  background: white;
-}
-
-.rowicone{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}

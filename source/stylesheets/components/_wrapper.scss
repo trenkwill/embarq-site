@@ -1,0 +1,126 @@
+
+
+
+
+.wrapper-home {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  color: $blue-dark;
+  align-items: center;
+  justify-content: center;
+  background: white url('/images/wave-banner.svg') bottom no-repeat;
+  background-size: 120%;
+  &__logo {
+    width: 340px;
+    margin-bottom: 40px;
+  }
+  // background-position:25% 76%;
+  h1 {
+    font-size: 70px;
+    font-family: $bebas-book;
+  }
+  p {
+    font-size: 24px;
+    font-weight: thin;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+  }
+  .bird-1 {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+  }
+  .bird-2 {
+    position: absolute;
+    right: 15%;
+    top: 150px;
+  }
+}
+
+.wrapper-blue-dark {
+  color: #fff;
+  position: relative;
+  background:$blue-dark;
+  margin-top: 65px;
+  padding: 70px 0;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -118px;
+    background: url(/images/wave-blue.svg);
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: -119px;
+    background: url(/images/wave-blue-bottom.svg) -1px 0;
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+  }
+  .card {
+    border: solid 1px rgba(255,255,255,0.7);
+    border-radius: 4px;
+    padding: 40px;
+    background:rgba(255,255,255,0.1);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    transition: all 0.1s ease-in-out;
+    &.card--hover {
+      &:hover {
+        box-shadow: 0 40px 30px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+.wrapper-blue-light {
+  position: relative;
+  background:#EFF7F9;
+  padding: 70px 0;
+  margin-top: 100px;
+  &:before {
+    $height: 120px;
+    content:"";
+    display: block;
+    position: absolute;
+    top: -$height;
+    background:url("/images/wave-blue-light-top.svg");
+    height: $height;
+    width: 100%;
+    background-size: cover;
+  }
+  &:after {
+    $height: 120px;
+    content:"";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: -$height;
+    background:url("/images/wave-blue-light-bottom.svg");
+    height: $height;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.wrapper-grey {
+  background: #f1f5fa;
+  position: relative;
+  padding-top: 20vh;
+  height: 100vh;
+}
+
+.wrapper-white {
+  background: white;
+  position: relative;
+  padding-top: 20vh;
+}

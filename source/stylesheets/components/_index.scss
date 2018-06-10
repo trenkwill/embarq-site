@@ -1,4 +1,6 @@
 // Import your components CSS files here.
+@import "typography";
+@import "wrapper";
 @import "alert";
 @import "navbar";
 @import "banner";
@@ -15,4 +17,5 @@
 @import "calculator__embarq";
 @import "entreprise-card";
 @import "faq";
+@import "spacing";
 

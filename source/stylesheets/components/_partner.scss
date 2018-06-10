@@ -1,19 +1,25 @@
 .brands{
+  // display: flex;
   text-align: center;
   padding: 25px 0px;
-  // margin: 0px 15px;
-  padding: 30px;
-}
-
-.img{
-  opacity: 0.6;
-  filter: grayscale(100%);
-  vertical-align: center;
-  &:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-    transition: all 0.5s ease;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    align-items: center;
   }
+  img {
+    float: left;
+    margin-right: 30px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    vertical-align: center;
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+      transition: all 0.5s ease;
+    }
+  }
+
 }
-
-
