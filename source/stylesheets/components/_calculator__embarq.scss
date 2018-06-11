@@ -54,8 +54,6 @@
 }
 
 .calculator__embarq .calc__embarq_button {
-
-
     cursor: pointer;
     display: block;
     border-style: none;
@@ -140,11 +138,11 @@
 /* popup */
 
 .calculator__embarq .calc__embarq_popup {
-    // position: absolute;
-    // background: none;
-    // top: 0px;
-    // left: -2px;
-    // width: 100%;
+    position: absolute;
+    background: none;
+    top: 0px;
+    left: -2px;
+    width: 100%;
 
     background: #F7F8FC;
     color: $blue-dark;

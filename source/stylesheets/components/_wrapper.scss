@@ -20,6 +20,14 @@
   h1 {
     font-size: 70px;
     font-family: $bebas-book;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
   p {
     font-size: 24px;
@@ -46,6 +54,10 @@
   background:$blue-dark;
   margin-top: 65px;
   padding: 70px 0;
+  @media (max-width: 768px) {
+    margin-top: 15px;
+    padding: 30px 0;
+  }
   &:before {
     content: "";
     display: block;
@@ -55,6 +67,12 @@
     height: 120px;
     width: 100%;
     background-size: cover;
+    pointer-events: none;
+    @media (max-width: 768px) {
+      height: 40px;
+      top: -59px;
+      margin-top: 25px;
+    }
   }
   &:after {
     content: "";
@@ -66,6 +84,11 @@
     height: 120px;
     width: 100%;
     background-size: cover;
+    pointer-events: none;
+    @media (max-width: 768px) {
+      height: 20px;
+      bottom: -20px;
+    }
   }
   .card {
     border: solid 1px rgba(255,255,255,0.7);
@@ -87,6 +110,10 @@
   background:#EFF7F9;
   padding: 70px 0;
   margin-top: 100px;
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    padding: 30px 0;
+  }
   &:before {
     $height: 120px;
     content:"";
@@ -97,18 +124,19 @@
     height: $height;
     width: 100%;
     background-size: cover;
+    pointer-events: none;
   }
   &:after {
-    $height: 120px;
     content:"";
     display: block;
     position: absolute;
     z-index: 1;
-    bottom: -$height;
+    bottom: -120px;
     background:url("/images/wave-blue-light-bottom.svg");
-    height: $height;
+    height: -119px;
     width: 100%;
     background-size: cover;
+    pointer-events: none;
   }
 }
 
@@ -123,4 +151,17 @@
   background: white;
   position: relative;
   padding-top: 20vh;
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+  .bird-1 {
+    position: absolute;
+    left: 26%;
+    top: 200px;
+  }
+  .bird-2 {
+    position: absolute;
+    right: 17%;
+    top: 500px;
+  }
 }

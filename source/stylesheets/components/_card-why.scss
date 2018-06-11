@@ -1,5 +1,10 @@
-.card-why{
-
+.cards-why{
+  display: flex;
+  .card {
+    position: relative;
+    width: 50%;
+    margin-right: 20px;
+  }
 }
 
 .card-why-logo{

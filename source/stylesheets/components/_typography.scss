@@ -2,12 +2,24 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, label, p {
 	margin: 0;
 }
-
+.h2 {
+  @media (max-width: 768px) {
+      font-size: 26px;
+  }
+}
+.h4 {
+  @media (max-width: 768px) {
+      font-size: 18px;
+  }
+}
 .title {
   font-family: $bebas-light;
 }
 .title-lg {
   font-size: 70px;
+  @media (max-width: 768px) {
+      font-size: 40px;
+  }
 }
 
 
@@ -30,7 +42,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, label, p {
   color: $brand-color;
 }
 .color-white {
-	color: #fff;
+  color: #fff;
+}
+.color-grey {
+	color: #B6BBC0;
 }
 .color-blue {
 	color: $blue;

@@ -1,10 +1,12 @@
 <div id="contact">
   <div class="wrapper-white">
+    <%= image_tag "bird-1.svg", class: "bird-1" %>
+    <%= image_tag "bird-2.svg", class: "bird-2" %>
     <div class="container padded">
-      <h2 class="text-center">Contactez-nous</h2>
-      <h5 class="text-center">Vous souhaitez plus d'informations sur nos services ou venir boire un café ? <br>On vous répond dans l'heure !</h5>
+       <h1 class="h1 title title-lg text-center mb+ color-brand">Contactez-nous</h1>
+      <h2 class="title h3 text-center">Vous souhaitez plus d'informations sur nos services ou venir boire un café ? <br>On vous répond dans l'heure !</h2>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+        <div class="col-sm-6 col-sm-offset-3">
           <div class="contact-form">
             <form id="embarq-form">
               <div class="row">
@@ -63,35 +65,46 @@
                 </div>
               </div>
               <div class="text-center">
-                <input type="submit" value="ENVOYER" class="btn-embarq" id="embarq-submit">
+                <input type="submit" value="ENVOYER" class="btn btn-primary btn-block btn-lg" id="embarq-submit">
               </div>
             </form>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="coordonne">
-              <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Adresse</h5>
-              <p>3 rue de la boule rouge</p>
-              <p>75009 Paris - France</p>
-              <h5><i class="fa fa-mobile" aria-hidden="true"></i>
-          Téléphone</h5>
-              <p>+33 (0)9 86 46 91 96</p>
-              <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail</h5>
-              <a href="mailto:contact@embarq.fr">contact@embarq.fr</a>
-              <div class="social-links">
-                <a href="https://fr.linkedin.com/company/embarq.fr"><i class="fa fa-linkedin"></i></a>
-                <a href="https://twitter.com/Embarq_FR"><i class="fa fa-twitter"></i></a>
-              </div>
-            </div>
+
+
+
         </div>
       </div>
+
+        <div class="row mt+">
+           <h1 class="h1 title title-lg text-center mb+ color-brand">Ou nous trouver ?</h1>
+          <h2 class="title h3 text-center mb+">Nous sommes installés en plein de cœur de Paris, dans le 9ème. Venez nous rendre visite!</h2>
+
+          <div class="col-sm-8">
+            <div id="map" style="width: 100%;height: 500px; border: solid 1px #58768F;"></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="coordonne">
+                <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Adresse</h5>
+                <p>3 rue de la boule rouge</p>
+                <p class="mb">75009 Paris - France</p>
+                <h5><i class="fa fa-mobile" aria-hidden="true"></i>
+            Téléphone</h5>
+                <p class="mb">+33 (0)9 86 46 91 96</p>
+                <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail</h5>
+                <a href="mailto:contact@embarq.fr">contact@embarq.fr</a>
+                <div class="social-links">
+                  <h5><i class="fa fa-social" aria-hidden="true"></i>Suivez-nous sur les réseaux sociaux</h5>
+                  <a href="https://fr.linkedin.com/company/embarq.fr"><i class="fa fa-linkedin"></i> Linkedin</a>
+                  <a href="https://twitter.com/Embarq_FR"><i class="fa fa-twitter"></i> Twitter</a>
+                </div>
+              </div>
+          </div>
+        </div>
     </div>
   </div>
 
-  <div class="wrapper-grey">
-    <div class="row">
-        <div id="map" style="width: 100%;height: 500px;"></div>
-    </div>
+  <div class="wrapper-blue-light">
+
   </div>
   <!-- Start code js pour Map -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDefKMsSRPOvtUoYBSpgzHWCnbmnrrShhA"></script>

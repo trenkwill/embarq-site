@@ -1,249 +1,243 @@
 <div id="entreprise">
   <div class="wrapper-white">
     <div class="container padded">
-      <h2 class="text-center">Entreprise</h2>
-      <h5 class="text-center">Découvrez nos services et solutions sur-mesures</h5>
-      <div id="wrapper">
-          <div class="flip-posts">
-              <div class="row">
-                  <div class="col-md-5 post col-md-push-1">
-                      <div class="card-post">
-                          <div class="content">
-                              <div class="front">
-                                  <div class="content-frame">
-                                      <h4>OPTIMISER LE COÛT DE LA GESTION DE VOS PROJETS</h4>
-                                      <div class="ico-holder">
-                                        <%=image_tag "calculator.png" %>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="content-frame">
-                                      <ul class="flip-list">
-                                          <li>Coût attractif (coefficient de facturation en portage de 1,6)</li>
-                                          <li>Facturation à la journée</li>
-                                          <li>Flexibilité du consultant</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-5 post col-md-push-1">
-                      <div class="card-post">
-                          <div class="content">
-                              <div class="front">
-                                  <div class="content-frame">
-                                      <h4>SIMPLIFIER LE RECRUTEMENT ET L’EMBAUCHE</h4>
-                                      <div class="ico-holder">
-                                        <%=image_tag "chat.png" %>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="content-frame">
-                                      <ul class="flip-list">
-                                          <li>Pas de gestion administrative</li>
-                                          <li>Rapidité de mise en oeuvre : 24 à 48H</li>
-                                          <li>Possibilité de recrutement</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-5 post col-md-push-1">
-                      <div class="card-post">
-                          <div class="content">
-                              <div class="front">
-                                  <div class="content-frame">
-                                      <h4>SECURISER VOTRE ACTIVITE</h4>
-                                      <div class="ico-holder">
-                                        <%=image_tag "locked.png" %>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="content-frame">
-                                      <ul class="flip-list">
-                                          <li>Pas d’incidence sur la masse salariale</li>
-                                          <li>Pas d’incidence sur les seuils sociaux</li>
-                                          <li>Réduction des risques de requalification</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-5 post col-md-push-1">
-                      <div class="card-post">
-                          <div class="content">
-                              <div class="front">
-                                  <div class="content-frame">
-                                      <h4>INTEGRER DES COMPETENCES UNIQUES</h4>
-                                      <div class="ico-holder">
-                                          <%=image_tag "multiskills.png" %>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="content-frame">
-                                      <ul class="flip-list">
-                                          <li>Profil de qualité et expérimenté</li>
-                                          <li>Un consultant freelance engage sa réputation</li>
-                                          <li>Ouverture à un nouveau réseau</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+       <h1 class="h1 title title-lg text-center mb+ color-brand">Entreprise</h1>
+      <h2 class="title h3 text-center">Découvrez nos services et solutions sur-mesures</h2>
+      <div class="row mt+ pt+">
+
+        <div class="col-sm-6">
+          <div class="mb+">
+            <h3 class="mb h4">
+              <%=image_tag "calculator.png", height: "30" %>
+              <strong>Optimiser le coût de la gestion de vos projets</strong></h3>
+
+            <ul class="list-group">
+                <li class="list-group-item">Coût attractif (coefficient de facturation en portage de 1,6)</li>
+                <li class="list-group-item">Facturation à la journée</li>
+                <li class="list-group-item">Flexibilité du consultant</li>
+            </ul>
           </div>
-      </div>
-      <div class="text-center">
-        <h5><b>Vous souhaitez avoir plus d'informations sur nos services ?</b></h5>
-        <h5>Contactez-nous, on vous répond dans l'heure !</h3>
-        <%= link_to "Contactez-nous", "contact.html", class: "btn-embarq" %>
         </div>
+
+
+        <div class="col-sm-6">
+
+          <div class="mb+">
+            <h3 class="mb h4">
+              <%=image_tag "chat.png", height: "30" %>
+              <strong>Simplifier le recrutement et l’embauche</strong></h3>
+            <ul class="list-group">
+                <li class="list-group-item">Pas de gestion administrative</li>
+                <li class="list-group-item">Rapidité de mise en oeuvre : 24 à 48H</li>
+                <li class="list-group-item">Possibilité de recrutement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-6">
+
+          <div class="mb+">
+            <h3 class="mb h4">
+              <%=image_tag "locked.png", height: "30" %>
+              <strong>Securiser votre activite</strong></h3>
+                     <ul class="list-group">
+                <li class="list-group-item">Pas d’incidence sur la masse salariale</li>
+                <li class="list-group-item">Pas d’incidence sur les seuils sociaux</li>
+                <li class="list-group-item">Réduction des risques de requalification</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="mb+">
+            <h3 class="mb h4">
+              <%=image_tag "multiskills.png", height: "30" %>
+              <strong>Integrer des competences uniques</strong></h3>
+                     <ul class="list-group">
+              <li class="list-group-item">Profil de qualité et expérimenté</li>
+              <li class="list-group-item">Un consultant freelance engage sa réputation</li>
+              <li class="list-group-item">Ouverture à un nouveau réseau</li>
+                    </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="wrapper-blue-dark padded" id="simul">
+
+    <div class="container">
+
+      <h3 class="title title-lg text-center">Simulez le coût d'une mission</h3>
+      <div class="row">
+        <div class="col-md-6">
+
+                  <form class="calculator__embarq card validate salaire-form" action="https://wimi-fitness.us11.list-manage.com/subscribe/post?u=9f76edc64eba56bd88ddae432&amp;id=4007bf1ef2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank" novalidate>
+
+                    <h3 class="mb text-center">Je connais :</h3>
+                    <div class="calc__embarq_row mb+">
+                      <div class="switch-field">
+                        <div>
+                          <input type="radio" id="calc_ma_facturation" name="switch_2" value="facturation" />
+                          <label for="calc_ma_facturation" class="btn btn-success">Ma facturation</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="calc_salaire_brut" name="switch_2" value="brut" />
+                          <label for="calc_salaire_brut" class="btn btn-success">Mon salaire brut</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="calc_salaire_net" name="switch_2" value="salairenet" />
+                          <label for="calc_salaire_net" class="btn btn-success">Mon salaire net</label>
+                        </div>
+                        <div style="clear:left;"></div>
+                      </div>
+
+                    </div>
+                    <div class="calc__embarq_hidden">
+                      <div class="calc__embarq_row mb-">
+                          <div class="calc__embarq_input_label">
+                              <label id="embarq_input_label" class="mb--">Facturation mensuelle en € :</label>
+                              <input type="text" class="form-control" id="calc__embarq_user_input">
+                          </div>
+                      </div>
+                      <div class="calc__embarq_row mb-">
+                          <div class="calc__embarq_input_label">
+                              <span class="mb--">Je souhaite déclarer des frais professionnels :</span>
+                              <div class="switch-field switch_short">
+
+                                  <input type="radio" id="calc__embarq_professionnels_yes" name="switch_professionnels" value="yes" checked/>
+                                  <label for="calc__embarq_professionnels_yes" class="mr-">oui</label>
+                                  <input type="radio" id="calc__embarq_professionnels_no" name="switch_professionnels" value="no" />
+                                  <label for="calc__embarq_professionnels_no">non</label>
+
+                                  <div style="clear:left;"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="calc__embarq_row calc_input_row mb-">
+                          <div class="calc__embarq_input_label">
+                              <label class="mb--">Eventuels frais facturés au client :</label>
+                              <input type="text" class="form-control" id="calc__embarq_client">
+                          </div>
+                      </div>
+                      <div class="calc__embarq_row calc_input_row mb-">
+                          <div class="calc__embarq_input_label">
+                              <label class="mb--">Eventuels frais de fonctionnement :</label>
+                              <input type="text" class="form-control" id="calc__embarq_fonctionnement">
+                          </div>
+                      </div>
+
+                      <div class="calc__embarq_row mb">
+                          <div class="calc__embarq_input_label">
+                              <label class="mb--">Votre email (pour vous enoyer la simulation)</label>
+                              <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+                              <label for="mce-EMAIL"></label>
+
+                          </div>
+                      </div>
+                      <div class="calc__embarq_row">
+
+                          <!-- <a href="#" id="calc__embarq_calculate" class="btn btn-block btn-primary btn-lg" onclick="calcuate_Embarq();return false;">Calculer</a> -->
+
+                          <input type="submit" value="Envoyer ma simulation" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-primary btn-lg" onclick="calcuate_Embarq();">
+                          <!-- Begin MailChimp Signup Form -->
+                          <div id="mc_embed_signup_scroll">
+                            <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f76edc64eba56bd88ddae432_4007bf1ef2" tabindex="-1" value=""></div>
+                              </div>
+
+
+                      </div>
+                    </div>
+                    <div class="calc__embarq_popup" style="display: none;">
+                        <div class="calc__embarq_popup_container">
+
+                            <div class="calc__embarq_popup_close">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div class="calc__embarq_popup_main">
+                                <div class="calc__embarq_popup_title">Résultat de votre simulation</div>
+                                <div class="calc__embarq_popup_results"></div>
+                                <p class="text-center">Pour une simulation détaillée et nos conseils pour optimiser vos revenus, <%= link_to "contactez nous.", "contact.html", class: "btn btn-xs btn-primary mt" %></p>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <div class="accordion padded-top">
+                    <h3 class="title text-center h2 mb">Questions fréquement posées...</h3>
+                    <div class="accordion-item">
+                      <a>Les frais de fonctionnement c'est quoi ?</a>
+                      <div class="accordion_content">
+                        <p>Les frais de fonctionnement correspondent aux frais non pris en charge par le client mais qui participent au bon fonctionnement de l'activité du freelance porté (frais de bouche, transport, téléphonie...) Ces frais ne sont pas imposables !</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a>Les frais refacturés c'est quoi ?</a>
+                      <div class="accordion_content">
+                        <p>Les frais refacturés correspondent aux frais pris en charge par votre client (frais kilométriques, hébergement...) et négociés avant le début de votre mission. Ces frais ne rentrent pas dans le calcul du salaire brut, ils sont rajoutés directement au salaire net.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a>Comment nous nous rémunérons?</a>
+                      <div class="accordion_content">
+                        <p>Nous prenons des frais de gestion sur le volume de facturation. Cette simulation est calculée sur la base d'un taux de frais de gestion de 7%. Ce taux est dégressif selon le volume de facturation.</p>
+                      </div>
+                    </div>
+                    <script>
+                    var accords = document.querySelectorAll(".accordion a");
+
+                    function toggleAccordion(){
+                      this.classList.toggle('active');
+                      this.nextElementSibling.classList.toggle('active');
+                    }
+
+                    accords.forEach(function(accordb) {
+                        accordb.addEventListener('click', toggleAccordion);
+                    });
+
+                    </script>
+                  </div>
+                </div>
+      </div>
 
     </div>
   </div>
-  <div class="wrapper-grey padded-top" id="simul">
-    <div id="encart-simul">
-      <h3 class="text-center">Simulez le coût d'une mission</h3>
-    </div>
-<!--   <h3 class="text-center">Simulez votre revenu</h3>
-  <br> -->
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-            <!--calculator start-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/2.0.10/autoNumeric.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-        <div class="calculator__embarq">
-          <div class="calc__embarq_subtitle">Je connais :</div>
-          <div class="calc__embarq_row">
-            <div class="switch-field">
-              <input type="radio" id="calc_ma_facturation" name="switch_2" value="facturation" />
-              <label for="calc_ma_facturation">ma facturation</label>
-              <input type="radio" id="calc_salaire_brut" name="switch_2" value="brut" />
-              <label for="calc_salaire_brut">mon salaire brut</label>
-              <input type="radio" id="calc_salaire_net" name="switch_2" value="salairenet" />
-              <label for="calc_salaire_net">mon salaire net</label>
-              <div style="clear:left;"></div>
-            </div>
 
-          </div>
-          <div class="calc__embarq_hidden">
-            <div class="calc__embarq_row">
-                <div class="calc__embarq_input_label">
-                    <span id="embarq_input_label">Facturation mensuelle en € :</span>
-                    <input type="text" id="calc__embarq_user_input">
-                </div>
-            </div>
-            <div class="calc__embarq_row">
-                <div class="calc__embarq_input_label">
-                    <span>Je souhaite déclarer des frais professionnels :</span>
-                    <div class="switch-field switch_short">
+  <div class="container pt+">
+    <h3 class="h1 title title-lg text-center pt+ mt+ mb+"> Ils nous font <span class="color-brand">confiance</span></h3>
+    <h4></h4>
 
-                        <input type="radio" id="calc__embarq_professionnels_yes" name="switch_professionnels" value="yes" checked/>
-                        <label for="calc__embarq_professionnels_yes">oui</label>
-                        <input type="radio" id="calc__embarq_professionnels_no" name="switch_professionnels" value="no" />
-                        <label for="calc__embarq_professionnels_no">non</label>
-
-                        <div style="clear:left;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="calc__embarq_row calc_input_row">
-                <div class="calc__embarq_input_label">
-                    <span>Eventuels frais facturés au client :</span>
-                    <input type="text" id="calc__embarq_client">
-                </div>
-            </div>
-            <div class="calc__embarq_row calc_input_row">
-                <div class="calc__embarq_input_label">
-                    <span>Eventuels frais de fonctionnement :</span>
-                    <input type="text" id="calc__embarq_fonctionnement">
-                </div>
-            </div>
-            <div class="calc__embarq_row">
-                <a href="#" id="calc__embarq_calculate" class="calc__embarq_button" onclick="calcuate_Embarq();return false;">Calculer</a>
-            </div>
-          </div>
-          <div class="calc__embarq_popup">
-              <div class="calc__embarq_popup_container">
-
-                  <div class="calc__embarq_popup_close">
-                      <i class="fa fa-times"></i>
-                  </div>
-                  <div class="calc__embarq_popup_main">
-                      <div class="calc__embarq_popup_title">Résultat de votre simulation</div>
-                      <div class="calc__embarq_popup_results"></div>
-                      <p class="text-center">Pour une simulation détaillée et nos conseils pour optimiser le coût de la gestion de vos projets <%= link_to "contactez nous.", "contact.html", class: "link-consultant" %></p>
-                  </div>
-              </div>
-          </div>
+      <div class="brands">
+        <div class="brands__inner">
+          <a href="https://www.axa.fr/" class="" target="blank">
+            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
+          </a>
+          <a href="https://www.hays.fr/" class="" target="blank">
+            <img src="images/logo_hays.jpg" alt="logohays">
+          </a>
+          <a href="https://www.cliveman.com/" class="" target="blank">
+            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
+          </a>
+          <a href="https://www.strategepartners.eu/" class="" target="blank">
+            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
+          </a>
+          <a href="https://www.axa.fr/" class="" target="blank">
+            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
+          </a>
+          <a href="https://www.hays.fr/" class="" target="blank">
+            <img src="images/logo_hays.jpg" alt="logohays">
+          </a>
+          <a href="https://www.cliveman.com/" class="" target="blank">
+            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
+          </a>
+          <a href="https://www.strategepartners.eu/" class="" target="blank">
+            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
+          </a>
         </div>
       </div>
-      <div class="container padded-top">
-        <div class="col-xs-12 col-md-6">
-          <div class="accordion">
-            <div class="accordion-item">
-              <a>Les frais de fonctionnement c'est quoi ?</a>
-              <div class="accordion_content">
-                <p>Les frais de fonctionnement correspondent aux frais non pris en charge par le client mais qui participent au bon fonctionnement de l'activité du freelance porté (frais de bouche, transport, téléphonie...) Ces frais ne sont pas imposables !</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>Les frais refacturés c'est quoi ?</a>
-              <div class="accordion_content">
-                <p>Les frais refacturés correspondent aux frais pris en charge par le client (frais kilométriques, hébergement...) et négociés avant le début de votre mission. Ces frais ne rentrent pas dans le calcul du salaire brut, ils sont rajoutés directement au salaire net.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>Comment nous nous rémunérons?</a>
-              <div class="accordion_content">
-                <p>Nous prenons des frais de gestion sur le volume de facturation. Cette simulation est calculée sur la base d'un taux de frais de gestion de 7%. Ce taux est dégressif selon le volume de facturation.</p>
-              </div>
-            </div>
-            <script>
-            var accords = document.querySelectorAll(".accordion a");
-
-            function toggleAccordion(){
-              this.classList.toggle('active');
-              this.nextElementSibling.classList.toggle('active');
-            }
-
-            accords.forEach(function(accordb) {
-                accordb.addEventListener('click', toggleAccordion);
-            });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="container padded-top">
-
-        <h4>Ils nous font confiance</h4>
-        <div class="row">
-          <div class="col-12">
-            <a href="https://www.axa.fr/" class="brands img" target="blank">
-              <%= image_tag "logo_axa.png", height: "100px" %>
-            </a>
-            <a href="https://www.hays.fr/" class="brands img" target="blank">
-              <%= image_tag "logo_hays.jpg" %>
-            </a>
-            <a href="https://www.cliveman.com/" class="brands img" target="blank">
-              <%= image_tag "logo_cliveman.png", height: "70px" %>
-            </a>
-            <a href="https://www.strategepartners.eu/" class="brands img" target="blank">
-              <%= image_tag "logo_stratege.png", height: "70px" %>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

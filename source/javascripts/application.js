@@ -2,6 +2,7 @@
 //= require bootstrap
 //= require jquery.ajaxchimp.min
 //= require jquery.ajaxchimp.langs.min
+//= require autoNumeric
 //= require simulateur
 //= require category_choice
 //= require jquery.marquee.min
@@ -22,3 +23,6 @@ $('.salaire-form').ajaxChimp({
     language: 'fr'
 });
 
+$(".navbar-toggle").click(function(){
+  $(this).toggleClass("active");
+});

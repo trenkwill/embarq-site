@@ -90,6 +90,6 @@ function calcuate_Embarq() {
             2, '.',
             ' ') +
         ' €" name="SALAIRE_NE"></span></div>');
-    // jQuery('.calc__embarq_popup').slideDown().addClass('.calc__embarq_popup_show ');
-    // jQuery('.calc__embarq_popup_container').addClass('.calc__embarq_popup_show ');
+    jQuery('.calc__embarq_popup').slideDown().addClass('.calc__embarq_popup_show ');
+    jQuery('.calc__embarq_popup_container').addClass('.calc__embarq_popup_show ');
 }

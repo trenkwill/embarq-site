@@ -1,5 +1,6 @@
 <div id="consultant">
   <div class="wrapper-white">
+    <%= image_tag "bird-1.svg", class: "bird-1" %>
     <div class="container padded">
        <h1 class="h1 title title-lg text-center mb+ color-brand">Consultant</h1>
       <h2 class="title h3 text-center">Créez, développez et pérénisez votre activité en toute tranquilité</h2>
@@ -10,7 +11,8 @@
         <div class="col-xs-12 col-sm-6">
           <h3 class="mb h4"><strong>Offrir une expertise humaine</strong></h3>
           <p>Chez EMBARQ, nous mouillons le maillot pour la satisfaction de nos consultants. Signataires de la charte des entrepreneurs bienveillants, nous plaçons les valeurs humaines au centre de notre démarche. Nous vous conseillons en toute objectivité sur le meilleur choix à faire pour votre projet et nous nous refusons aux pratiques amorales telles que la surfacturation.</p>
-          <%= link_to "Je veux de la transparence", "contact.html", class: "btn btn-xs btn-primary mt" %>
+          <br>
+          <%= link_to "Je veux de la transparence", "contact.html", class: "text-bold pt" %>
         </div>
       </div>
       <div class="row rowicone">
@@ -20,7 +22,8 @@
         <div class="col-xs-12 col-sm-6 col-sm-pull-6">
           <h3 class="mb h4"><strong>Réalisez votre rêve</strong></h3>
           <p> Que vous soyez employé, futur entrepreneur ou freelance, vous rêvez de devenir indépendant avec le confort et les avantages du salarié ? <br>Avec EMBARQ pas de stress, on vous explique tout et on s'occupe de tout ! Vous pouvez commencer votre mission sous 24h, on vous apporte tous les services dont vous pourriez avoir besoin : avantages sociaux du CDI (mutuelle, prévoyance, chômage), développement d'activité et de visibilité, cartes de visites... Nous ne nous arrêterons pas avant d'avoir réalisé votre rêve.</p>
-          <%= link_to "Faîtes moi rêver", "contact.html", class: "btn btn-xs btn-primary mt" %>
+          <br>
+          <%= link_to "Faîtes moi rêver", "contact.html", class: "text-bold pt" %>
         </div>
       </div>
       <div class="row rowicone padded-top">
@@ -30,7 +33,8 @@
         <div class="col-xs-12 col-sm-6">
           <h3 class="mb h4"><strong>Facilitez votre quotidien</strong></h3>
           <p>Oubliez les nocturnes que vous comptiez consacrer à la facturation, aux déclarations et au suivi de votre activité. Désormais profitez de vos soirées, nous mettons à votre disposition une solution intuitive pour suivre vos contrats, facturations et l'ensemble de votre activité. Un conseiller est aussi là pour vous accompagner. C’est aussi ça avoir un service client qui envoie du bois !</p>
-          <%= link_to "Je veux une démo", "contact.html", class: "btn btn-xs btn-primary mt" %>
+          <br>
+          <%= link_to "Je veux une démo", "contact.html", class: "text-bold pt" %>
         </div>
       </div>
       <div class="row rowicone padded-topo">
@@ -40,7 +44,8 @@
         <div class="col-xs-12 col-sm-6 col-sm-pull-6">
           <h3 class="mb h4"><strong>Développez votre business</strong></h3>
           <p>Nous imaginons la société de portage comme elle devrait être, c'est à dire une solution de portage mais surtout une communauté d'entraide et de mise en relation. <br>L'accompagnement dans le développement de votre activité est au coeur de nos préoccupations et nous co-construisons nos services avec nos consultants pour qu'ils se consacrent sur l'essentiel : leurs business !</p>
-          <%= link_to "Je rejoins la communauté", "contact.html", class: "btn btn-xs btn-primary mt" %>
+          <br>
+          <%= link_to "Je rejoins la communauté", "contact.html", class: "text-bold pt" %>
         </div>
       </div>
     </div>
@@ -51,9 +56,8 @@
 
       <h3 class="title title-lg text-center">Simulez votre revenu</h3>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6">
 
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/2.0.10/autoNumeric.js"></script>
           <form class="calculator__embarq card validate salaire-form" action="https://wimi-fitness.us11.list-manage.com/subscribe/post?u=9f76edc64eba56bd88ddae432&amp;id=4007bf1ef2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank" novalidate>
 
             <h3 class="mb text-center">Je connais :</h3>
@@ -143,15 +147,14 @@
                     <div class="calc__embarq_popup_main">
                         <div class="calc__embarq_popup_title">Résultat de votre simulation</div>
                         <div class="calc__embarq_popup_results"></div>
-                        <p class="text-center">Pour une simulation détaillée et nos conseils pour optimiser vos revenus, <%= link_to "contactez nous.", "contact.html", class: "btn btn-xs btn-primary mt" %></p>
+                        <br>
+                        <p class="text-center">Pour une simulation détaillée et nos conseils pour optimiser vos revenus, <%= link_to "contactez nous.", "contact.html", class: "text-bold pt" %></p>
                     </div>
                 </div>
             </div>
           </form>
         </div>
-      </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6">
               <div class="accordion padded-top">
                 <h3 class="title text-center h2 mb">Questions fréquement posées...</h3>
                 <div class="accordion-item">
@@ -187,7 +190,10 @@
                 </script>
               </div>
             </div>
-          </div>
+      </div>
+
     </div></div>
 </div>
+
+
 
