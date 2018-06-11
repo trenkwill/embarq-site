@@ -19,6 +19,10 @@
     width: 100%;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
 }
 
 .calculator__embarq .calc__embarq_input_label {
@@ -104,6 +108,10 @@
 
 .calculator__embarq .switch-field label {
   white-space: inherit;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .calculator__embarq .switch-field div:last-child label {
@@ -112,6 +120,9 @@
 
 .calculator__embarq .switch-field {
     display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 }
 
 .calculator__embarq .switch-field label:nth-child(3) {
@@ -178,7 +189,6 @@
     width: 100%;
     padding-bottom: 40px;
     font-size: 18px;
-    padding-left: 30px;
 }
 
 .calculator__embarq .calc__embarq_popup_results div span {
@@ -187,11 +197,6 @@
 
 @media all and (max-width:415px) {
     .calculator__embarq .calc__embarq_popup_results div {
-
-        width: 100%;
-        padding-bottom: 14px;
-        font-size: 11px;
-        padding-left: 27px;
     }
     .calculator__embarq .switch-field label {
 
@@ -200,20 +205,15 @@
 
         display: inline;
     }
-    .calculator__embarq .calc__embarq_popup_title {
 
-        font-size: 15px;
-
-    }
     .calculator__embarq .calc__embarq_input_label span {
         width: 100%;
         display: block;
 
     }
     .calculator__embarq input[type="text"] {
-
-        width: 85%;
-        max-width: 85%;
+        width: 100%;
+        max-width: 100%;
         margin-left: 0px;
 
     }

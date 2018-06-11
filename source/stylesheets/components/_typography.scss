@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, label, p {
 .title {
   font-family: $bebas-light;
 }
+.title-bold {
+  font-family: 'Bebas Regular';
+}
 .title-lg {
   font-size: 70px;
   @media (max-width: 768px) {

@@ -1,65 +1,99 @@
 <div id="entreprise">
   <div class="wrapper-white">
-    <div class="container padded">
-       <h1 class="h1 title title-lg text-center mb+ color-brand">Entreprise</h1>
-      <h2 class="title h3 text-center">Découvrez nos services et solutions sur-mesures</h2>
-      <div class="row mt+ pt+">
-
-        <div class="col-sm-6">
-          <div class="mb+">
-            <h3 class="mb h4">
-              <%=image_tag "calculator.png", height: "30" %>
-              <strong>Optimiser le coût de la gestion de vos projets</strong></h3>
-
-            <ul class="list-group">
-                <li class="list-group-item">Coût attractif (coefficient de facturation en portage de 1,6)</li>
-                <li class="list-group-item">Facturation à la journée</li>
-                <li class="list-group-item">Flexibilité du consultant</li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6">
-
-          <div class="mb+">
-            <h3 class="mb h4">
-              <%=image_tag "chat.png", height: "30" %>
-              <strong>Simplifier le recrutement et l’embauche</strong></h3>
-            <ul class="list-group">
-                <li class="list-group-item">Pas de gestion administrative</li>
-                <li class="list-group-item">Rapidité de mise en oeuvre : 24 à 48H</li>
-                <li class="list-group-item">Possibilité de recrutement</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-        <div class="col-sm-6">
-
-          <div class="mb+">
-            <h3 class="mb h4">
-              <%=image_tag "locked.png", height: "30" %>
-              <strong>Securiser votre activite</strong></h3>
-                     <ul class="list-group">
-                <li class="list-group-item">Pas d’incidence sur la masse salariale</li>
-                <li class="list-group-item">Pas d’incidence sur les seuils sociaux</li>
-                <li class="list-group-item">Réduction des risques de requalification</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="mb+">
-            <h3 class="mb h4">
-              <%=image_tag "multiskills.png", height: "30" %>
-              <strong>Integrer des competences uniques</strong></h3>
-                     <ul class="list-group">
-              <li class="list-group-item">Profil de qualité et expérimenté</li>
-              <li class="list-group-item">Un consultant freelance engage sa réputation</li>
-              <li class="list-group-item">Ouverture à un nouveau réseau</li>
-                    </ul>
-          </div>
+<div class="flip-posts">
+        <div class="row">
+            <div class="col-md-5 post col-md-push-1">
+                <div class="card-post">
+                    <div class="content">
+                        <div class="front">
+                            <div class="content-frame">
+                                <h4 class="title title-bold color-brand mb h3">OPTIMISER LE COÛT DE LA GESTION DE VOS PROJETS</h4>
+                                <div class="ico-holder">
+                                  <%=image_tag "calculator.png" %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="content-frame">
+                                <ul class="flip-list">
+                                    <li>Coût attractif (coefficient de facturation en portage de 1,6)</li>
+                                    <li>Facturation à la journée</li>
+                                    <li>Flexibilité du consultant</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 post col-md-push-1">
+                <div class="card-post">
+                    <div class="content">
+                        <div class="front">
+                            <div class="content-frame">
+                                <h4 class="title title-bold color-brand mb h3">SIMPLIFIER LE RECRUTEMENT ET L’EMBAUCHE</h4>
+                                <div class="ico-holder">
+                                  <%=image_tag "chat.png" %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="content-frame">
+                                <ul class="flip-list">
+                                    <li>Pas de gestion administrative</li>
+                                    <li>Rapidité de mise en oeuvre : 24 à 48H</li>
+                                    <li>Possibilité de recrutement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 post col-md-push-1">
+                <div class="card-post">
+                    <div class="content">
+                        <div class="front">
+                            <div class="content-frame">
+                                <h4 class="title title-bold color-brand mb h3">SECURISER VOTRE ACTIVITE</h4>
+                                <div class="ico-holder">
+                                  <%=image_tag "locked.png" %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="content-frame">
+                                <ul class="flip-list">
+                                    <li>Pas d’incidence sur la masse salariale</li>
+                                    <li>Pas d’incidence sur les seuils sociaux</li>
+                                    <li>Réduction des risques de requalification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 post col-md-push-1">
+                <div class="card-post">
+                    <div class="content">
+                        <div class="front">
+                            <div class="content-frame">
+                                <h4 class="title title-bold color-brand mb h3">INTEGRER DES COMPETENCES UNIQUES</h4>
+                                <div class="ico-holder">
+                                    <%=image_tag "multiskills.png" %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="content-frame">
+                                <ul class="flip-list">
+                                    <li>Profil de qualité et expérimenté</li>
+                                    <li>Un consultant freelance engage sa réputation</li>
+                                    <li>Ouverture à un nouveau réseau</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
@@ -207,37 +241,28 @@
     </div>
   </div>
 
-  <div class="container pt+">
-    <h3 class="h1 title title-lg text-center pt+ mt+ mb+"> Ils nous font <span class="color-brand">confiance</span></h3>
-    <h4></h4>
+  <div class="container pt+ mt+ pb+ mb+">
+      <h3 class="h1 title title-lg text-center pt+ mt+ mb+"> Ils nous font <span class="color-brand">confiance</span></h3>
+      <h4></h4>
 
-      <div class="brands">
-        <div class="brands__inner">
-          <a href="https://www.axa.fr/" class="" target="blank">
-            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
-          </a>
-          <a href="https://www.hays.fr/" class="" target="blank">
-            <img src="images/logo_hays.jpg" alt="logohays">
-          </a>
-          <a href="https://www.cliveman.com/" class="" target="blank">
-            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
-          </a>
-          <a href="https://www.strategepartners.eu/" class="" target="blank">
-            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
-          </a>
-          <a href="https://www.axa.fr/" class="" target="blank">
-            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
-          </a>
-          <a href="https://www.hays.fr/" class="" target="blank">
-            <img src="images/logo_hays.jpg" alt="logohays">
-          </a>
-          <a href="https://www.cliveman.com/" class="" target="blank">
-            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
-          </a>
-          <a href="https://www.strategepartners.eu/" class="" target="blank">
-            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
-          </a>
+        <div class="brands">
+          <div class="brands__inner">
+            <% link_to "https://www.axa.fr/", target: "_blank" do %>
+              <%= image_tag "logo_axa.png", height: "100"%>
+            <% end %>
+
+            <% link_to "https://www.hays.fr/", target: "_blank" do %>
+              <%= image_tag "logo_hays.jpg", height: "100"%>
+            <% end %>
+
+            <% link_to "https://www.cliveman.com/", target: "_blank" do %>
+              <%= image_tag "logo_cliveman.png", height: "70"%>
+            <% end %>
+
+            <% link_to "https://www.strategepartners.eu/", target: "_blank" do %>
+              <%= image_tag "logo_stratege.png", height: "70"%>
+            <% end %>
+          </div>
         </div>
-      </div>
-  </div>
+    </div>
 </div>

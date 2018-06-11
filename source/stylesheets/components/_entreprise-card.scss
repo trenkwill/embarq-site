@@ -31,8 +31,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: all 1.5s ease;
-  -webkit-transition: all 1.5s ease;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 
 }
 
@@ -55,11 +55,11 @@
   text-align: center;
   padding: 10px;
   background: white;
-  border-top: 10px solid #4eb1ce;
+  border: 1px solid $blue-dark;
   border-radius: 10px;
    box-shadow: 2px 0px 12px 0px rgba(148,148,148,0.4);
-   transition: all 1.5s ease;
-  -webkit-transition: all 1.5s ease;
+   transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 }
 
 .back {
@@ -86,6 +86,9 @@
   overflow: hidden;
   text-align: center;
   line-height: normal;
+  img {
+    height: 80px;
+  }
 }
 
 .flip-list{

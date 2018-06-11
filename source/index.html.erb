@@ -120,30 +120,21 @@
 
       <div class="brands">
         <div class="brands__inner">
-          <a href="https://www.axa.fr/" class="" target="blank">
-            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
-          </a>
-          <a href="https://www.hays.fr/" class="" target="blank">
-            <img src="images/logo_hays.jpg" alt="logohays">
-          </a>
-          <a href="https://www.cliveman.com/" class="" target="blank">
-            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
-          </a>
-          <a href="https://www.strategepartners.eu/" class="" target="blank">
-            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
-          </a>
-          <a href="https://www.axa.fr/" class="" target="blank">
-            <img src="images/logo_axa.png" alt="logoaxa"  height="100">
-          </a>
-          <a href="https://www.hays.fr/" class="" target="blank">
-            <img src="images/logo_hays.jpg" alt="logohays">
-          </a>
-          <a href="https://www.cliveman.com/" class="" target="blank">
-            <img src="images/logo_cliveman.png" alt="logostrategecliveman" height="70">
-          </a>
-          <a href="https://www.strategepartners.eu/" class="" target="blank">
-            <img src="images/logo_stratege.png" alt="logostrategepartners" height="70">
-          </a>
+          <% link_to "https://www.axa.fr/", target: "_blank" do %>
+            <%= image_tag "logo_axa.png", height: "100"%>
+          <% end %>
+
+          <% link_to "https://www.hays.fr/", target: "_blank" do %>
+            <%= image_tag "logo_hays.jpg", height: "100"%>
+          <% end %>
+
+          <% link_to "https://www.cliveman.com/", target: "_blank" do %>
+            <%= image_tag "logo_cliveman.png", height: "70"%>
+          <% end %>
+
+          <% link_to "https://www.strategepartners.eu/", target: "_blank" do %>
+            <%= image_tag "logo_stratege.png", height: "70"%>
+          <% end %>
         </div>
       </div>
   </div>

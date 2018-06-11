@@ -19,6 +19,10 @@
   padding: 1rem 3rem 1rem 1rem;
   color: #eee;
   border-bottom: 1px solid #e5e5e5;
+  @media (max-width: 768px) {
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 .accordion a:hover,

@@ -70,24 +70,53 @@ mark {
 .home__icon-wrap {
   padding-top: 130px;
   position: relative;
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-left: 90px;
+    margin-bottom: 50px;
+  }
   .home__icon-1 {
     position: absolute;
     top: 0px;
+    left: 0;
     height: 90px;
+    @media (max-width: 768px) {
+      top:0px;
+      height: inherit;
+      width: 60px;
+    }
   }
   .home__icon-2 {
     position: absolute;
     top: 10px;
+    left: 0;
     height: 73px;
+    @media (max-width: 768px) {
+      top:0px;
+      height: inherit;
+      width: 60px;
+    }
   }
   .home__icon-3 {
     position: absolute;
     top: 30px;
+    left: 0;
     height: 60px;
+    @media (max-width: 768px) {
+      top:0px;
+      height: inherit;
+      width: 60px;
+    }
   }
   .home__icon-4 {
     position: absolute;
     top: 35px;
+    left: 0;
     height: 60px;
+    @media (max-width: 768px) {
+      top:0px;
+      height: inherit;
+      width: 60px;
+    }
   }
 }
